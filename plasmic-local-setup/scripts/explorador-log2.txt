@@ -1,0 +1,24 @@
+Build failed
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\dev-build/static/styles/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\dev-build/static/styles/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../live-frame/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../live-frame/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../react-web-bundle/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../react-web-bundle/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../canvas-packages/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../canvas-packages/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../loader-html-hydrate/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../loader-html-hydrate/build/' glob
+Fix error, click outside, or press Esc to close the overlay.
+
+Disable overlay by setting Rsbuild's dev.client.overlay config to false.

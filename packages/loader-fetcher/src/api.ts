@@ -176,7 +176,7 @@ export class Api {
       manualRedirect?: boolean;
     }
   ) {
-    this.host = opts.host ?? "https://codegen.plasmic.app";
+    this.host = opts.host ?? process.env.PLASMIC_HOST ?? "http://localhost:3004";
     this.fetch = (
       opts.nativeFetch && globalThis.fetch ? globalThis.fetch : unfetch
     ).bind(globalThis);

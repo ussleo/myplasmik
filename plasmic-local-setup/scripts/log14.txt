@@ -1,0 +1,23 @@
+PS C:\tmp-plasmik\platform\wab> node tools/compile-peg.js modelPegParser.pegcoffee src/wab/gen/modelPegParser.js
+🔨 Compilando modelPegParser.pegcoffee -> src/wab/gen/modelPegParser.js
+✅ Generado correctamente.
+PS C:\tmp-plasmik\platform\wab> node tools/compile-peg.js cssPegParser.pegcoffee src/wab/gen/cssPegParser.js
+🔨 Compilando cssPegParser.pegcoffee -> src/wab/gen/cssPegParser.js
+✅ Generado correctamente.
+PS C:\tmp-plasmik\platform\wab> node tools/compile-peg.js funcTplParser.pegcoffee src/wab/gen/funcTplParser.js
+🔨 Compilando funcTplParser.pegcoffee -> src/wab/gen/funcTplParser.js
+✅ Generado correctamente.
+PS C:\tmp-plasmik\platform\wab> node tools/compile-peg.js GridStyleParser.pegjs src/wab/gen/GridStyleParser.js
+🔨 Compilando GridStyleParser.pegjs -> src/wab/gen/GridStyleParser.js
+❌ Error compilando: In:
+return ( ->
+  return [{size: first}, ...rest.map(x => ({size: x[1]}))];
+ ).apply(__initializer)
+ was the following error:unexpected identifier
+PS C:\tmp-plasmik\platform\wab> node tools/compile-peg.js GridStyleParser.pegjs src/wab/gen/GridStyleParser.js
+🔨 Compilando GridStyleParser.pegjs -> src/wab/gen/GridStyleParser.js
+❌ Error compilando: In:
+return ( ->
+  return [{size: first}, ...rest.map(x => ({size: x[1]}))];
+ ).apply(__initializer)
+ was the following error:unexpected identifier

@@ -1,0 +1,8 @@
+PS C:\tmp-plasmik\platform\wab> .\generate_artifacts.ps1                                                                .\generate_artifacts.ps1 : El término '.\generate_artifacts.ps1' no se reconoce como nombre de un cmdlet, función,
+archivo de script o programa ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de
+acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ .\generate_artifacts.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\generate_artifacts.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException

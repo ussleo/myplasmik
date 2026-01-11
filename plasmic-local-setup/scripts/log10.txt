@@ -1,0 +1,19 @@
+PS C:\tmp-plasmik\platform\wab> .\node_modules\.bin\pegjs.cmd --plugin pegjs-coffee-plugin --format commonjs --output src/wab/gen/modelPegParser.js src/wab/modelPegParser.pegcoffee                                                            node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open 'C:\tmp-plasmik\platform\wab\src\wab\modelPegParser.pegcoffee'
+
+
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+ {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\modelPegParser.pegcoffee'
+}
+
+Node.js v22.16.0

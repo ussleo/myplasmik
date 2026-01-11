@@ -1,0 +1,2543 @@
+✅ Dependencias instaladas correctamente.
+Presiona Enter para salir...
+
+
+PS C:\tmp-plasmik\platform\wab> cd C:\tmp-plasmik\plasmic-local-setup\scripts
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\start_plasmic.ps1
+🚀 Iniciando Plasmic Studio (Local Mode)...
+🔥 Lanzando ventana del Backend...
+⏳ Esperando 10 segundos...
+🔥 Lanzando ventana del Frontend...
+🎉 Ventanas lanzadas.
+PS C:\tmp-plasmik\plasmic-local-setup\scripts>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🐘 Iniciando Backend...
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module '@/wab/shared/model/classes'
+Require stack:
+- C:\tmp-plasmik\platform\wab\src\wab\shared\RuleSetHelpers.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\TplMgr.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\code-components\variants.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\Variants.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\component-arenas.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\Arenas.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\core\components.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\util.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\PinManager.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\cached-selectors.ts
+- C:\tmp-plasmik\platform\wab\src\wab\shared\SlotUtils.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\code-components\code-components.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\db\DbMgr.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\routes\util.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\auth\util.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\auth\routes.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\auth\passport-cfg.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\AppServer.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\app-backend-real.ts
+- C:\tmp-plasmik\platform\wab\src\wab\server\main.ts
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1401:15)
+    at Module._resolveFilename (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:4794:36)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\tmp-plasmik\platform\wab\src\wab\shared\RuleSetHelpers.ts:1:40) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\RuleSetHelpers.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\TplMgr.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\code-components\\variants.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\Variants.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\component-arenas.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\Arenas.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\core\\components.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\codegen\\util.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\PinManager.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\cached-selectors.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\SlotUtils.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\code-components\\code-components.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\db\\DbMgr.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\routes\\util.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\auth\\util.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\auth\\routes.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\auth\\passport-cfg.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\AppServer.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\app-backend-real.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\server\\main.ts'
+  ]
+}
+
+Node.js v22.16.0
+PS C:\tmp-plasmik\platform\wab>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+@ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\KeyFrameStops.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls'
+    ╭─[12:25]
+ 10 │ import { ensure, ensureHTMLElt, insert, maybe, maybes, removeAt, spawn, tuple, withoutNils } from "@/wab/shared/common";
+ 11 │ import { mkRuleSet } from "@/wab/shared/core/styles";
+ 12 │ import { KeyFrame } from "@/wab/shared/model/classes";
+    ·                          ────────────────────────────
+ 13 │ import { Menu } from "antd";
+ 14 │ import classNames from "classnames";
+    ╰────
+
+ @ ./src/wab/client/components/sidebar/AnimationSequenceControls.tsx
+ @ ./src/wab/client/components/studio/LeftPane.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\StyleComponent.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls'
+    ╭─[25:49]
+ 23 │ import { MIXIN_CAP, MIXIN_LOWER, MIXINS_CAP, RESET_CAP, TOKEN_CAP, TOKENS_CAP, VARIANTS_CAP } from "@/wab/shared/Labels";
+ 24 │ import { convertSelfContainerType, getRshContainerType, isPositionSet, PositionLayoutType } from "@/wab/shared/layoututils";
+ 25 │ import { ensureKnownTplTag, isKnownTplTag } from "@/wab/shared/model/classes";
+    ·                                                  ────────────────────────────
+ 26 │ import { RSH, RuleSetHelpers, VariantedRuleSetHelpers } from "@/wab/shared/RuleSetHelpers";
+ 27 │ import { isExplicitSize } from "@/wab/shared/sizingutils";
+    ╰────
+
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\TokenDefinedIndicator.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls'
+    ╭─[10:38]
+  8 │ import { notNil } from "@/wab/shared/common";
+  9 │ import { MutableToken } from "@/wab/shared/core/tokens";
+ 10 │ import { isKnownVariantedValue } from "@/wab/shared/model/classes";
+    ·                                       ────────────────────────────
+ 11 │ import { capitalizeFirst } from "@/wab/shared/strs";
+ 12 │ import { VariantedStylesHelper } from "@/wab/shared/VariantedStylesHelper";
+    ╰────
+
+ @ ./src/wab/client/components/sidebar/ColorTokenControl.tsx
+ @ ./src/wab/client/components/sidebar/StyleTokenRow.tsx
+ @ ./src/wab/client/components/sidebar/LeftGeneralTokensPanel.tsx
+ @ ./src/wab/client/components/studio/LeftPane.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\tpl-menu.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components'
+    ╭─[23:76]
+ 21 │ import { isAdminTeamEmail } from "@/wab/shared/devflag-utils";
+ 22 │ import { PositionLayoutType, getContainerTypeName } from "@/wab/shared/layoututils";
+ 23 │ import { isKnownRenderExpr, isKnownTplSlot, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                             ────────────────────────────
+ 24 │ import { mkProjectLocation } from "@/wab/shared/route/app-routes";
+ 25 │ import { isTplAutoSizable, isTplDefaultSized, resetTplSize } from "@/wab/shared/sizingutils";
+    ╰────
+
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\tpl-text-ops.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components'
+    ╭─[9:40]
+  7 │ import { convertTextToDynamic, fixTextChildren } from "@/wab/shared/core/tpls";
+  8 │ import { computeDefinedIndicator } from "@/wab/shared/defined-indicator";
+  9 │ import { RawText, isKnownRawText } from "@/wab/shared/model/classes";
+    ·                                         ────────────────────────────
+ 10 │ import { Menu } from "antd";
+ 11 │ import React from "react";
+    ╰────
+
+ @ ./src/wab/client/components/tpl-menu.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\variants\StandaloneVariantGroup.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\variants'
+   ╭─[7:27]
+ 5 │ import { VariantDataPicker, makeVariantMenu } from "@/wab/client/components/variants/variant-menu";
+ 6 │ import { ensure, spawn } from "@/wab/shared/common";
+ 7 │ import { ObjectPath } from "@/wab/shared/model/classes";
+   ·                            ────────────────────────────
+ 8 │ import { getPlumeVariantDef } from "@/wab/shared/plume/plume-registry";
+ 9 │ import { observer } from "mobx-react";
+   ╰────
+
+ @ ./src/wab/client/components/variants/VariantsPanel.tsx
+ @ ./src/wab/client/components/sidebar-tabs/ComponentTab/ComponentTab.tsx
+ @ ./src/wab/client/components/sidebar-tabs/style-tab.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\variants\VariantsController.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\variants'
+   ╭─[6:31]
+ 4 │ import { ensureManagedFrameForVariantInComponentArena, getCellKeyForFrame, getComponentArenaBaseFrame, isCustomComponentFrame } from "@/wab/shared/component-arenas";
+ 5 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 6 │ import { isKnownVariant } from "@/wab/shared/model/classes";
+   ·                                ────────────────────────────
+ 7 │ import { ensureManagedRowForVariantInPageArena, getFrameColumnIndex } from "@/wab/shared/page-arenas";
+ 8 │ import { applyPinStateToFrame, FramePinManager, PinStateManager } from "@/wab/shared/PinManager";
+   ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\variants\VariantsPanel.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\variants'
+    ╭─[32:64]
+ 30 │ import { isTplCodeComponent } from "@/wab/shared/core/tpls";
+ 31 │ import { ScreenSizeSpec } from "@/wab/shared/css-size";
+ 32 │ import { isKnownTplTag, ObjectPath, TplComponent, TplTag } from "@/wab/shared/model/classes";
+    ·                                                                 ────────────────────────────
+ 33 │ import { getPlumeVariantDef } from "@/wab/shared/plume/plume-registry";
+ 34 │ import { VariantOptionsType } from "@/wab/shared/TplMgr";
+    ╰────
+
+ @ ./src/wab/client/components/sidebar-tabs/ComponentTab/ComponentTab.tsx
+ @ ./src/wab/client/components/sidebar-tabs/style-tab.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\variants\variant-menu.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\components\variants'
+    ╭─[13:76]
+ 11 │ import { createExprForDataPickerValue, extractValueSavedFromDataPicker } from "@/wab/shared/core/exprs";
+ 12 │ import { STATE_ACCESS_TYPES, getAccessTypeDisplayName } from "@/wab/shared/core/states";
+ 13 │ import { CustomCode, isKnownComponentVariantGroup, isKnownObjectPath } from "@/wab/shared/model/classes";
+    ·                                                                             ────────────────────────────
+ 14 │ import { Menu, Popover } from "antd";
+ 15 │ import React from "react";
+    ╰────
+
+ @ ./src/wab/client/components/variants/VariantsPanel.tsx
+ @ ./src/wab/client/components/sidebar-tabs/ComponentTab/ComponentTab.tsx
+ @ ./src/wab/client/components/sidebar-tabs/style-tab.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\db.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[8:21]
+  6 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+  7 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+  8 │ import { meta } from "@/wab/shared/model/classes-metas";
+    ·                      ──────────────────────────────────
+  9 │ import { uniqBy } from "lodash";
+ 10 │ import { observable } from "mobx";
+    ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\figma-importer\props.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\figma-importer'
+    ╭─[9:47]
+  7 │ import { customCode } from "@/wab/shared/core/exprs";
+  8 │ import { tryEvalExpr } from "@/wab/shared/eval";
+  9 │ import { VariantsRef, isKnownCustomCode } from "@/wab/shared/model/classes";
+    ·                                                ────────────────────────────
+ 10 │ import { isAnyType, isBoolType, isNumType } from "@/wab/shared/model/model-util";
+ 11 │ import { notification } from "antd";
+    ╰────
+
+ @ ./src/wab/client/figma.tsx
+ @ ./src/wab/client/clipboard/paste.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\figma.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[22:43]
+ 20 │ import { GlobalVariantFrame, RootComponentVariantFrame } from "@/wab/shared/component-frame";
+ 21 │ import { ARENA_LOWER } from "@/wab/shared/Labels";
+ 22 │ import { ensureKnownTplTag, RawText } from "@/wab/shared/model/classes";
+    ·                                            ────────────────────────────
+ 23 │ import { RSH } from "@/wab/shared/RuleSetHelpers";
+ 24 │ import { WaitForClipError } from "@/wab/shared/UserError";
+    ╰────
+
+ @ ./src/wab/client/clipboard/paste.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\fixes-post-change.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[15:108]
+ 13 │ import { ensureCorrectImplicitStates, removeImplicitStatesAfterRemovingTplNode } from "@/wab/shared/core/states";
+ 14 │ import { buildParamToComponent as buildParamToComponentMap, flattenTpls, getTplOwnerComponent, isGrid, isTplComponent, isTplContainer, isTplSlot, isTplTag, isTplTagOrComponent, isTplVariantable, tryGetOwnerSite } from "@/wab/shared/core/tpls";
+ 15 │ import { RenderExpr, isKnownSlotParam, isKnownTplComponent, isKnownTplSlot, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                             ────────────────────────────
+ 16 │ import { summarizeChanges } from "@/wab/shared/model/model-change-util";
+ 17 │ import { fixupForPlume } from "@/wab/shared/plume/plume-utils";
+    ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\init-view-ctx.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+   ╭─[6:21]
+ 4 │ import { spawn } from "@/wab/shared/common";
+ 5 │ import { observeModel } from "@/wab/shared/core/observable-model";
+ 6 │ import { meta } from "@/wab/shared/model/classes-metas";
+   ·                      ──────────────────────────────────
+ 7 │ import * as mobx from "mobx";
+ 8 │ window.mobx = mobx;
+   ╰────
+
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\insertable-templates.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[12:36]
+ 10 │ import { flattenInsertableTemplatesByType } from "@/wab/shared/devflags";
+ 11 │ import { cloneInsertableTemplate } from "@/wab/shared/insertable-templates";
+ 12 │ import { ArenaFrame, TplNode } from "@/wab/shared/model/classes";
+    ·                                     ────────────────────────────
+ 13 │ import { flatten, fromPairs } from "lodash";
+ 14 │ export const getPageTemplatesGroups = (studioCtx)=>{
+    ╰────
+
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\react-global-hook\utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\react-global-hook'
+   ╭─[6:46]
+ 4 │ import { isTplTextBlock } from "@/wab/shared/core/tpls";
+ 5 │ import { ValComponent, ValSlot, ValTag, ValTextTag } from "@/wab/shared/core/val-nodes";
+ 6 │ import { TplComponent, TplSlot, TplTag } from "@/wab/shared/model/classes";
+   ·                                               ────────────────────────────
+ 7 │ import { isString } from "lodash";
+ 8 │ function hasKey(v, key) {
+   ╰────
+
+ @ ./src/wab/client/react-global-hook/globalHook.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\state-management\interactions-meta.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\state-management'
+    ╭─[13:338]
+ 11 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 12 │ import { DATA_SOURCE_LOWER, DATA_SOURCE_OPERATION_LOWER, SERVER_QUERY_LOWER, VARIABLE_LOWER } from "@/wab/shared/Labels";
+ 13 │ import { CollectionExpr, CustomCode, ensureKnownCustomFunctionExpr, ensureKnownDataSourceOpExpr, ensureKnownFunctionType, ensureKnownObjectPath, ensureKnownVarRef, FunctionExpr, isKnownFunctionType, isKnownPageHref, isKnownRenderableType, isKnownTplRef, ObjectPath, QueryInvalidationExpr, TplComponent, TplTag, VariantsRef, VarRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                   ────────────────────────────
+ 14 │ import { getPlaceholderValueToWabType, isRenderFuncType, typeFactory } from "@/wab/shared/model/model-util";
+ 15 │ import { smartHumanize } from "@/wab/shared/strs";
+    ╰────
+
+ @ ./src/wab/client/components/sidebar-tabs/DataBinding/DataPickerColumn.tsx
+ @ ./src/wab/client/components/sidebar-tabs/DataBinding/DataPicker.tsx
+ @ ./src/wab/client/components/coding/FullCodeEditor.tsx
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx\StudioCtx.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx'
+    ╭─[88:25]
+ 86 │ import { cloneInsertableTemplateComponent } from "@/wab/shared/insertable-templates";
+ 87 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 88 │ import * as classes from "@/wab/shared/model/classes";
+    ·                          ────────────────────────────
+ 89 │ import { Arena, Component, ComponentArena, PageArena, TemplatedString, TplComponent, TplSlot, TplTag, isKnownArenaFrame, isKnownComponentArena, isKnownProjectDependency, isKnownVariantSetting } from "@/wab/shared/model/classes";
+ 90 │ import { modelSchemaHash } from "@/wab/shared/model/classes-metas";
+    ╰────
+
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx\StudioCtx.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx'
+    ╭─[90:32]
+ 88 │ import * as classes from "@/wab/shared/model/classes";
+ 89 │ import { Arena, Component, ComponentArena, PageArena, TemplatedString, TplComponent, TplSlot, TplTag, isKnownArenaFrame, isKnownComponentArena, isKnownProjectDependency, isKnownVariantSetting } from "@/wab/shared/model/classes";
+ 90 │ import { modelSchemaHash } from "@/wab/shared/model/classes-metas";
+    ·                                 ──────────────────────────────────
+ 91 │ import { ChangesType, summarizeChanges } from "@/wab/shared/model/model-change-util";
+ 92 │ import { reorderPageArenaCols } from "@/wab/shared/page-arenas";
+    ╰────
+
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx\view-ctx.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\studio-ctx'
+    ╭─[40:76]
+ 38 │ import { evalCodeWithEnv } from "@/wab/shared/eval";
+ 39 │ import { rectsIntersect } from "@/wab/shared/geom";
+ 40 │ import { RawText, TplComponent, TplSlot, TplTag, isKnownTplComponent } from "@/wab/shared/model/classes";
+    ·                                                                             ────────────────────────────
+ 41 │ import { isTplResizable } from "@/wab/shared/sizingutils";
+ 42 │ import { generateStateOnChangeProp, generateStateValueProp, useDollarState } from "@plasmicapp/react-web";
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\style-mgr.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[11:30]
+  9 │ import { CssVarResolver, classNameForRuleSet, genCanvasRules, generateAnimationPropValue, generateKeyframesRule, makeDefaultStylesRuleBodyFor, makeDefaultStylesRules, mkCssVarsRuleForCanvas, studioDefaultStylesClassNameBase, tplMatchThemeStyle } from "@/wab/shared/core/styles";
+ 10 │ import { isComponentRoot, isTplComponent, isTplTag, isTplVariantable, tplChildren } from "@/wab/shared/core/tpls"; 11 │ import { isKnownTplTag } from "@/wab/shared/model/classes";
+    ·                               ────────────────────────────
+ 12 │ import { CssVarsChangeType } from "@/wab/shared/model/model-change-util";
+ 13 │ import { getDependentVariantSettings, makeVariantComboSorter, sortedVariantSettings } from "@/wab/shared/variant-sort";
+    ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\style-mgr.ts:1:1
+  × Module not found: Can't resolve '../gen/static/styles/react-web-css.txt' in 'C:\tmp-plasmik\platform\wab\src\wab\client'
+    ╭─[16:24]
+ 14 │ import { sortBy } from "lodash";
+ 15 │ // @ts-ignore
+ 16 │ import reactWebCss from "!!raw-loader!../gen/static/styles/react-web-css.txt";
+    ·                         ─────────────────────────────────────────────────────
+ 17 │ import { valOwnerProp } from "@/wab/shared/canvas-constants";
+ 18 │ import { walkDependencyTree } from "@/wab/shared/core/project-deps";
+    ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\tours\tutorials\tutorials-helpers.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\client\tours\tutorials'
+    ╭─[14:216]
+ 12 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 13 │ import { DATA_SOURCE_LOWER } from "@/wab/shared/Labels";
+ 14 │ import { DataSourceOpExpr, DataSourceTemplate, EventHandler, isKnownCompositeExpr, isKnownCustomCode, isKnownObjectPath, isKnownTplComponent, isKnownTplSlot, ObjectPath, QueryInvalidationExpr, TemplatedString } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                         ────────────────────────────
+ 15 │ import { getTplComponentArg } from "@/wab/shared/TplMgr";
+ 16 │ import { $$$ } from "@/wab/shared/TplQuery";
+    ╰────
+
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\commons\DataToken.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\commons'
+    ╭─[11:26]
+  9 │ import { tryEvalExpr } from "@/wab/shared/eval";
+ 10 │ import { makeDataTokenIdentifier } from "@/wab/shared/eval/expression-parser";
+ 11 │ import { DataToken } from "@/wab/shared/model/classes";
+    ·                           ────────────────────────────
+ 12 │ import { mkMetaName } from "@plasmicapp/host";
+ 13 │ import { upperFirst } from "lodash";
+    ╰────
+
+ @ ./src/wab/shared/refactoring.ts
+ @ ./src/wab/shared/core/components.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\commons\StyleToken.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\commons'
+    ╭─[14:27]
+ 12 │ import { LENGTH_PERCENTAGE_UNITS, NUMBER_LENGTH_PERCENTAGE_UNITS, NUMBER_UNITS } from "@/wab/shared/css/types";
+ 13 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 14 │ import { StyleToken } from "@/wab/shared/model/classes";
+    ·                            ────────────────────────────
+ 15 │ import { canOverrideImportedTokens, canOverrideRegisteredTokens } from "@/wab/shared/ui-config-utils";
+ 16 │ import CSSEscape from "css.escape";
+    ╰────
+
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\Arenas.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[10:205]
+  8 │ import { Pt } from "@/wab/shared/geom";
+  9 │ import { COMBINATIONS_CAP } from "@/wab/shared/Labels";
+ 10 │ import { Arena, ArenaFrame, ArenaFrameCell, ArenaFrameRow, ComponentArena, ensureKnownArenaFrame, isKnownArena, isKnownArenaFrame, isKnownComponentArena, isKnownPageArena, isKnownVariant, PageArena } from "@/wab/shared/model/classes";    ·                                                                                                                                                                                                              ────────────────────────────
+ 11 │ import { getPageArenaRowLabel, makePageArenaFrame, removeManagedFramesFromPageArenaForVariantGroup, removeManagedFramesFromPageArenaForVariants, syncPageArenaFrameSize } from "@/wab/shared/page-arenas";
+ 12 │ import { FramePinManager } from "@/wab/shared/PinManager";
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\RuleSetHelpers.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[1:30]
+ 1 │ import { isKnownTplTag } from "@/wab/shared/model/classes";
+   ·                               ────────────────────────────
+ 2 │ import { assert } from "@/wab/shared/common";
+ 3 │ import { getAllDefinedStyles, typographyCssProps } from "@/wab/shared/core/style-props";
+   ╰────
+
+ @ ./src/wab/shared/visibility-utils.ts
+ @ ./src/wab/client/icons.tsx
+ @ ./src/wab/client/components/widgets.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\SharedApi.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[5:32]
+ 3 │ import { showProjectBranchId } from "@/wab/shared/ApiSchemaUtil";
+ 4 │ import { assert, ensureType, NotImplementedError, omitNils } from "@/wab/shared/common";
+ 5 │ import { modelSchemaHash } from "@/wab/shared/model/classes-metas";
+   ·                                 ──────────────────────────────────
+ 6 │ import L, { pick, uniq } from "lodash";
+ 7 │ import semver from "semver";
+   ╰────
+
+ @ ./src/wab/client/api.ts
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\SlotUtils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[12:128]
+ 10 │ import { ancestorsUpWithSlotSelections, flattenTpls, getTplOwnerComponent, hasNoEventHandlers, hasNoExistingStyles, hasNoRichTextStyles, isCodeComponentRoot, isTplComponent, isTplIcon, isTplInput, isTplSlot, isTplTag, isTplTextBlock, isTplVariantable, TplTagCodeGenType, tryGetOwnerSite } from "@/wab/shared/core/tpls";
+ 11 │ import { maybeComputedFn } from "@/wab/shared/mobx-util";
+ 12 │ import { isKnownRenderExpr, isKnownTplComponent, isKnownTplSlot, isKnownVirtualRenderExpr, RenderExpr, VirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                                                 ────────────────────────────
+ 13 │ import { isRenderableType, isRenderFuncType } from "@/wab/shared/model/model-util";
+ 14 │ import { $$$ } from "@/wab/shared/TplQuery";
+    ╰────
+
+ @ ./src/wab/shared/TplQuery.ts
+ @ ./src/wab/client/tours/tutorials/frags/basic-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\TplMgr.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[31:359]
+ 29 │ import { ensureComponentsObserved } from "@/wab/shared/mobx-util";
+ 30 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 31 │ import { Animation, AnimationSequence, ArenaFrame, Arg, ComponentDataQuery, DataToken, Mixin, StyleToken, VariantsRef, ensureKnownEventHandler, ensureKnownVariantGroup, ensureKnownVariantsRef, isKnownArenaFrame, isKnownComponent, isKnownEventHandler, isKnownImageAsset, isKnownMixin, isKnownStyleToken, isKnownTheme, isKnownTplNode, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                        ────────────────────────────
+ 32 │ import { typeFactory } from "@/wab/shared/model/model-util";
+ 33 │ import { addScreenSizeToPageArenas, ensureManagedRowForVariantInPageArena, mkPageArena, reorderPageArenaCols } from "@/wab/shared/page-arenas";
+    ╰────
+
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\TplQuery.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[7:246]
+ 5 │ import { ensureCorrectImplicitStates, removeImplicitStatesAfterRemovingTplNode } from "@/wab/shared/core/states";
+ 6 │ import { ancestorsUp, ancestorsUpWithSlotSelections, clone, detectComponentCycle, flattenTpls, getOwnerSite, getParentTplOrSlotSelection, getTplOwnerComponent, isTplComponent, isTplSlot, isTplTag, isTplTextBlock, isTplVariantable, mkTplTagX, removeMarkersToTpl, summarizeSlotParam, summarizeTpl, tplChildren, tplChildrenOnly, trackComponentRoot, tryGetOwnerSite, tryGetTplOwnerComponent } from "@/wab/shared/core/tpls";
+ 7 │ import { Arg, ensureKnownRenderExpr, ensureKnownTplComponent, ensureKnownTplNode, ensureKnownTplTag, isKnownRawText, isKnownRenderExpr, isKnownTplComponent, isKnownTplNode, isKnownTplTag, RenderExpr, TplComponent, TplNode, TplSlot, TplTag } from "@/wab/shared/model/classes";
+   ·                                                                                                                                                                                                                                                       ────────────────────────────
+ 8 │ import { getSlotArgs, getTplSlotDescendants, getTplSlotForParam, isSlot } from "@/wab/shared/SlotUtils";
+ 9 │ import { TplMgr } from "@/wab/shared/TplMgr";
+   ╰────
+
+ @ ./src/wab/client/tours/tutorials/frags/basic-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\VariantTplMgr.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[19:91]
+ 17 │ import { tryEvalExpr } from "@/wab/shared/eval";
+ 18 │ import { ensureComponentsObserved } from "@/wab/shared/mobx-util";
+ 19 │ import { ImageAssetRef, isKnownTplNode, isKnownTplSlot, isKnownVariantsRef, RawText } from "@/wab/shared/model/classes";
+    ·                                                                                            ────────────────────────────
+ 20 │ import { RSH } from "@/wab/shared/RuleSetHelpers";
+ 21 │ import { getAncestorTplSlot, isSlotVar } from "@/wab/shared/SlotUtils";
+    ╰────
+
+ @ ./src/wab/shared/TplMgr.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\VariantedStylesHelper.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[6:56]
+ 4 │ import { cloneRuleSet } from "@/wab/shared/core/styles";
+ 5 │ import { ImmutableToken } from "@/wab/shared/core/tokens";
+ 6 │ import { RuleSet, VariantedRuleSet, isKnownMixin } from "@/wab/shared/model/classes";
+   ·                                                         ────────────────────────────
+ 7 │ import { isAncestorCombo, makeGlobalVariantComboSorter } from "@/wab/shared/variant-sort";
+ 8 │ export class VariantedStylesHelper {
+   ╰────
+
+ @ ./src/wab/shared/effective-variant-setting.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\Variants.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[11:83]
+  9 │ import { isTplTag, summarizeTplTag } from "@/wab/shared/core/tpls";
+ 10 │ import { parseScreenSpec, ScreenSizeSpec } from "@/wab/shared/css-size";
+ 11 │ import { ComponentVariantGroup, GlobalVariantGroup, Variant, VariantSetting } from "@/wab/shared/model/classes";
+    ·                                                                                    ────────────────────────────
+ 12 │ import { FramePinManager, withoutIrrelevantScreenVariants } from "@/wab/shared/PinManager";
+ 13 │ import { ResponsiveStrategy } from "@/wab/shared/responsiveness";
+    ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\bundler.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[5:31]
+ 3 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 4 │ import { InstUtil } from "@/wab/shared/model/InstUtil";
+ 5 │ import * as classesModule from "@/wab/shared/model/classes";
+   ·                                ────────────────────────────
+ 6 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 7 │ import { Type, checkEqKeys, isStrongRefField, isWeakRefField, toTs } from "@/wab/shared/model/model-meta";
+   ╰────
+
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\bundler.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[6:21]
+ 4 │ import { InstUtil } from "@/wab/shared/model/InstUtil";
+ 5 │ import * as classesModule from "@/wab/shared/model/classes";
+ 6 │ import { meta } from "@/wab/shared/model/classes-metas";
+   ·                      ──────────────────────────────────
+ 7 │ import { Type, checkEqKeys, isStrongRefField, isWeakRefField, toTs } from "@/wab/shared/model/model-meta";
+ 8 │ import { conformsToType } from "@/wab/shared/model/model-util";
+   ╰────
+
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\cached-selectors.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[23:286]
+ 21 │ import mobx from "@/wab/shared/import-mobx";
+ 22 │ import { keyedComputedFn, maybeComputedFn } from "@/wab/shared/mobx-util";
+ 23 │ import { ComponentSwapSplitContent, ComponentVariantSplitContent, GlobalVariantSplitContent, isKnownCustomCode, isKnownCustomFunctionExpr, isKnownDataSourceOpExpr, isKnownImageAssetRef, isKnownPageHref, isKnownQueryInvalidationExpr, isKnownQueryRef, isKnownTplRef, isKnownVarRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                               ────────────────────────────
+ 24 │ import { isDataTokenUsedInExpr } from "@/wab/shared/refactoring";
+ 25 │ import { parse$$PropertyAccesses } from "@/wab/shared/utils/regex-dollardollar";
+    ╰────
+
+ @ ./src/wab/shared/Variants.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\code-components\code-components.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\code-components'
+    ╭─[29:695]
+ 27 │ import { convertSelfContainerType } from "@/wab/shared/layoututils";
+ 28 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 29 │ import { AnyType, BoolType, Choice, CodeComponentHelper, CodeComponentMeta, CodeComponentVariantMeta, CodeLibrary, ColorPropType, CustomCode, CustomFunction, DateRangeStrings, DateString, DefaultStylesClassNamePropType, FigmaComponentMapping, FunctionType, HrefType, Img, ClassNamePropType as ModelClassNamePropType, StyleScopeClassNamePropType as ModelStyleScopeClassNamePropType, Num, QueryData, RenderExpr, StyleToken, TargetType, Text, ensureKnownPropParam, ensureKnownTplTag, isKnownClassNamePropType, isKnownCustomCode, isKnownEventHandler, isKnownPropParam, isKnownRenderFuncType, isKnownRenderableType, isKnownStateParam, isKnownStyleExpr, isKnownTplRef, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ────────────────────────────
+ 30 │ import { convertTsToWabType, typeFactory, typesEqual } from "@/wab/shared/model/model-util";
+ 31 │ import { getPlumeEditorPlugin } from "@/wab/shared/plume/plume-registry";
+    ╰────
+
+ @ ./src/wab/client/code-components/code-components.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\code-components\context-factory.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\code-components'
+   ╭─[5:36]
+ 3 │ import { computedProjectFlags } from "@/wab/shared/cached-selectors";
+ 4 │ import mobx from "@/wab/shared/import-mobx";
+ 5 │ import { isKnownTplComponent } from "@/wab/shared/model/classes";
+   ·                                     ────────────────────────────
+ 6 │ import { isSlot } from "@/wab/shared/SlotUtils";
+ 7 │ import { clone, cloneArgs } from "@/wab/shared/core/tpls";
+   ╰────
+
+ @ ./src/wab/client/cseval.ts
+ @ ./src/wab/client/studio-ctx/view-ctx.ts
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\code-components\simplified-mode\Forms.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\code-components\simplified-mode'
+    ╭─[8:72]
+  6 │ import { SlotSelection } from "@/wab/shared/core/slots";
+  7 │ import { clone as cloneTpl, getParamVariable, getTplComponentArgByParamName, mkTplComponent, mkTplInlinedText } from "@/wab/shared/core/tpls";
+  8 │ import { ExprText, isKnownCompositeExpr, isKnownExpr, RenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                         ────────────────────────────
+  9 │ import { getSingleTplComponentFromArg } from "@/wab/shared/SlotUtils";
+ 10 │ import { TplMgr } from "@/wab/shared/TplMgr";
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/optimize-hostless-packages.ts
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\fonts.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen'    ╭─[10:69]
+  8 │ import { fontWeightNumber } from "@/wab/shared/css";
+  9 │ import { getFontSpec } from "@/wab/shared/fonts";
+ 10 │ import { isKnownRawText, isKnownStyleExpr, isKnownStyleMarker } from "@/wab/shared/model/classes";
+    ·                                                                      ────────────────────────────
+ 11 │ import L from "lodash";
+ 12 │ export function extractUsedFontsFromComponents(site, components) {
+    ╰────
+
+ @ ./src/wab/client/fonts.ts
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\image-assets.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen'    ╭─[15:52]
+ 13 │ import { flattenTpls, isTplComponent, isTplIcon, isTplPicture, pushExprs } from "@/wab/shared/core/tpls";
+ 14 │ import { parseDataUrl, parseDataUrlToSvgXml, parseSvgXml } from "@/wab/shared/data-urls";
+ 15 │ import { isKnownImageAssetRef, isKnownVarRef } from "@/wab/shared/model/classes";
+    ·                                                     ────────────────────────────
+ 16 │ import L, { last } from "lodash";
+ 17 │ import mime from "mime/lite";
+    ╰────
+
+ @ ./src/wab/shared/core/project-deps.ts
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\data-tokens\imports.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\data-tokens'
+   ╭─[6:53]
+ 4 │ import { findExprsInComponent } from "@/wab/shared/core/tpls";
+ 5 │ import { extractDataTokenIdentifiersFromCode, isPathDataToken, parseDataTokenIdentifier } from "@/wab/shared/eval/expression-parser";
+ 6 │ import { isKnownCustomCode, isKnownObjectPath } from "@/wab/shared/model/classes";
+   ·                                                      ────────────────────────────
+ 7 │ export function generateDataTokenImports(tokenIdentifiers, site, projectId, exportOpts) {
+ 8 │     if (tokenIdentifiers.size === 0) {
+   ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\global-context\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\global-context'
+    ╭─[13:89]
+ 11 │ import { toFinalToken } from "@/wab/shared/core/tokens";
+ 12 │ import { getProjectFlags } from "@/wab/shared/devflags";
+ 13 │ import { isKnownColorPropType, isKnownDefaultStylesPropType, isKnownStyleTokenRef } from "@/wab/shared/model/classes";
+    ·                                                                                          ────────────────────────────
+ 14 │ import L from "lodash";
+ 15 │ export function makeGlobalContextBundle(site, projectId, imports, opts) {
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\global-variants\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\global-variants'
+   ╭─[6:40]
+ 4 │ import { extractUsedGlobalVariantsForComponents, makeGlobalVariantGroupUseName, makeUniqueUseScreenVariantsName } from "@/wab/shared/codegen/variants";
+ 5 │ import { siteFinalStyleTokensAllDeps } from "@/wab/shared/core/site-style-tokens";
+ 6 │ import { ensureKnownVariantGroup } from "@/wab/shared/model/classes";
+   ·                                         ────────────────────────────
+ 7 │ import { uniqBy } from "lodash";
+ 8 │ export function makeGlobalVariantComboChecker(_site) {
+   ╰────
+
+ @ ./src/wab/shared/codegen/react-p/class-names/index.ts
+ @ ./src/wab/shared/core/styles.ts
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p'
+    ╭─[55:447]
+ 53 │ import { exprUsesCtxOrFreeVars } from "@/wab/shared/eval/expression-parser";
+ 54 │ import { LOCALIZABLE_HTML_ATTRS } from "@/wab/shared/localization";
+ 55 │ import { ensureKnownNamedState, ensureKnownVariantGroup, isKnownColorPropType, isKnownCustomCode, isKnownDefaultStylesClassNamePropType, isKnownDefaultStylesPropType, isKnownGlobalVariantSplitContent, isKnownImageAssetRef, isKnownNamedState, isKnownObjectPath, isKnownRenderExpr, isKnownRenderFuncType, isKnownStyleExpr, isKnownStyleScopeClassNamePropType, isKnownStyleTokenRef, isKnownTplComponent, isKnownTplTag, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                ────────────────────────────
+ 56 │ import { getPlumeCodegenPlugin } from "@/wab/shared/plume/plume-registry";
+ 57 │ import { deriveSizeStyleValue, getPageComponentSizeType } from "@/wab/shared/sizingutils";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\optimize-hostless-packages.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p'
+    ╭─[16:40]
+ 14 │ import { allComponents } from "@/wab/shared/core/sites";
+ 15 │ import { filterTpls, flattenTpls, getParamVariable, isTplCodeComponent } from "@/wab/shared/core/tpls";
+ 16 │ import { isKnownDataSourceOpExpr } from "@/wab/shared/model/classes";
+    ·                                         ────────────────────────────
+ 17 │ import { OPTIMIZED_FORM_IMPORT, formComponentName } from "@plasmicpkgs/antd5";
+ 18 │ function makeFormsTreeShakable(component, site) {
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\page-metadata\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\page-metadata'
+    ╭─[9:112]
+  7 │ import { asCode, stripParens } from "@/wab/shared/core/exprs";
+  8 │ import { extractDataTokenIdentifiersFromCode, isPathDataToken } from "@/wab/shared/eval/expression-parser";
+  9 │ import { isKnownCustomCode, isKnownExpr, isKnownImageAssetRef, isKnownObjectPath, isKnownTemplatedString } from "@/wab/shared/model/classes";
+    ·                                                                                                                 ────────────────────────────
+ 10 │ import L from "lodash";
+ 11 │ /**
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\params\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\params'
+    ╭─[14:95]
+ 12 │ import { makeStyleExprClassName } from "@/wab/shared/core/styles";
+ 13 │ import { makeLocalizationStringKey } from "@/wab/shared/localization";
+ 14 │ import { isKnownFunctionType, isKnownImageAssetRef, isKnownStateParam, isKnownStyleExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                ────────────────────────────
+ 15 │ import { isImageType, wabToTsType } from "@/wab/shared/model/model-util";
+ 16 │ import { getSerializedImgSrcForAsset } from "src/wab/shared/codegen/react-p/image";
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\splits\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\splits'
+   ╭─[4:49]
+ 2 │ import { exportActiveSplitsConfig } from "@/wab/shared/codegen/splits";
+ 3 │ import { SplitStatus } from "@/wab/shared/core/splits";
+ 4 │ import { isKnownGlobalVariantSplitContent } from "@/wab/shared/model/classes";
+   ·                                                  ────────────────────────────
+ 5 │ export function makeSplitsProviderBundle(site, projectId, opts) {
+ 6 │     if (site.splits.length === 0) {
+   ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\states\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\states'
+    ╭─[11:38]
+  9 │ import { getStateOnChangePropName, getStateValuePropName, getStateVarName, getVirtualWritableStateInitialValue, isReadonlyState, isWritableState } from "@/wab/shared/core/states";
+ 10 │ import { ancestorsUp, isTplCodeComponent, isTplComponent, isTplRepeated, isTplTag, tplHasRef } from "@/wab/shared/core/tpls";
+ 11 │ import { ensureKnownNamedState } from "@/wab/shared/model/classes";
+    ·                                       ────────────────────────────
+ 12 │ export function serializeInitFunc(state, ctx, isForRegisterInitFunc) {
+ 13 │     let initFunc = undefined;
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\text\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\react-p\text'
+    ╭─[15:86]
+ 13 │ import { getCssRulesFromRs } from "@/wab/shared/css";
+ 14 │ import { extractAllVariantCombosForText, genLocalizationString, isLocalizableTextBlock, makeLocalizationStringKey } from "@/wab/shared/localization";
+ 15 │ import { isKnownCustomCode, isKnownExprText, isKnownObjectPath, isKnownRawText } from "@/wab/shared/model/classes";
+    ·                                                                                       ──────────────────────────── 16 │ import L from "lodash";
+ 17 │ import memoizeOne from "memoize-one";
+    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\splits.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen'   ╭─[4:49]
+ 2 │ import { allGlobalVariantsReferencedByComponent, isPageComponent } from "@/wab/shared/core/components";
+ 3 │ import { toClassName, toVarName } from "@/wab/shared/codegen/util";
+ 4 │ import { isKnownGlobalVariantSplitContent } from "@/wab/shared/model/classes";
+   ·                                                  ────────────────────────────
+ 5 │ import { SplitStatus, SplitType } from "@/wab/shared/core/splits";
+ 6 │ import { sumBy, uniq } from "lodash";
+   ╰────
+
+ @ ./src/wab/shared/codegen/react-p/splits/index.ts
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\codegen\style-tokens.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\codegen'    ╭─[9:55]
+  7 │ import { toFinalToken } from "@/wab/shared/core/tokens";
+  8 │ import { flattenTpls } from "@/wab/shared/core/tpls";
+  9 │ import { isKnownStyleExpr, isKnownStyleTokenRef } from "@/wab/shared/model/classes";
+    ·                                                        ────────────────────────────
+ 10 │ import L from "lodash";
+ 11 │ export function exportStyleTokens(projectId, site) {
+    ╰────
+
+ @ ./src/wab/shared/core/project-deps.ts
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\columns-utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[4:30]
+ 2 │ import { parseScreenSpec } from "@/wab/shared/css-size";
+ 3 │ import { RSH, readonlyRSH } from "@/wab/shared/RuleSetHelpers";
+ 4 │ import { ColumnsConfig } from "@/wab/shared/model/classes";
+   ·                               ────────────────────────────
+ 5 │ import { expandRuleSets } from "@/wab/shared/core/styles";
+ 6 │ import { clamp, isEqual, isUndefined, range, sum } from "lodash";
+   ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\component-arenas.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[11:199]
+  9 │ import { getComponentArena } from "@/wab/shared/core/sites";
+ 10 │ import { parseScreenSpec } from "@/wab/shared/css-size";
+ 11 │ import { ArenaFrameCell, ArenaFrameGrid, ArenaFrameRow, ComponentArena, Variant, ensureKnownVariant, ensureKnownVariantGroup, ensureMaybeKnownVariantGroup, isKnownVariant, isKnownVariantGroup } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                        ────────────────────────────
+ 12 │ import { getComponentDefaultSize, isExplicitPixelSize } from "@/wab/shared/sizingutils";
+ 13 │ import orderBy from "lodash/orderBy";
+    ╰────
+
+ @ ./src/wab/shared/Variants.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\contexts.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[3:51]
+ 1 │ import { arrayEq, assert, ensure } from "@/wab/shared/common";
+ 2 │ import { observeRelevantFields } from "@/wab/shared/code-components/context-factory";
+ 3 │ import { Arg, isKnownRenderExpr, RenderExpr } from "@/wab/shared/model/classes";
+   ·                                                    ────────────────────────────
+ 4 │ import { getSlotArgs } from "@/wab/shared/SlotUtils";
+ 5 │ import { $$$ } from "@/wab/shared/TplQuery";
+   ╰────
+
+ @ ./src/wab/client/cseval.ts
+ @ ./src/wab/client/studio-ctx/view-ctx.ts
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\components.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[29:962]
+ 27 │ import { getFolderDisplayName, getFolderTrimmed } from "@/wab/shared/folders/folders-util";
+ 28 │ import { ensureComponentsObserved } from "@/wab/shared/mobx-util";
+ 29 │ import { Arg, CodeComponentHelper, CodeComponentMeta, CodeComponentVariantMeta, Component, ComponentDataQuery, ComponentServerQuery, ComponentTemplateInfo, ComponentVariantGroup, FigmaComponentMapping, GlobalVariantGroup, GlobalVariantGroupParam, NameArg, NamedState, ObjectPath, PageMeta, PlumeInfo, PropParam, QueryRef, RenderExpr, SlotParam, State, StateChangeHandlerParam, StateParam, TplNode, VarRef, VariantGroupState, VariantsRef, ensureKnownArgType, ensureKnownSlotParam, ensureKnownStateParam, ensureKnownTplComponent, ensureKnownVariantGroup, ensureKnownVariantGroupState, isKnownArgType, isKnownComponentVariantGroup, isKnownCustomCode, isKnownEventHandler, isKnownFunctionArg, isKnownFunctionType, isKnownImageAsset, isKnownNamedState, isKnownObjectPath, isKnownPageHref, isKnownRenderExpr, isKnownStateChangeHandlerParam, isKnownStateParam, isKnownStrongFunctionArg, isKnownTplRef, isKnownVarRef, isKnownVariantGroupState, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ────────────────────────────
+ 30 │ import { typeFactory } from "@/wab/shared/model/model-util";
+ 31 │ import { isParamUsedInExpr, replaceQueryWithPropInCodeExprs, replaceStateWithPropInCodeExprs, replaceVarWithPropInCodeExprs } from "@/wab/shared/refactoring";
+    ╰────
+
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\custom-functions.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[7:63]
+ 5 │ import { findExprsInNode } from "@/wab/shared/core/tpls";
+ 6 │ import { tryEvalExpr } from "@/wab/shared/eval";
+ 7 │ import { isKnownCustomFunctionExpr, isKnownEventHandler } from "@/wab/shared/model/classes";
+   ·                                                                ────────────────────────────
+ 8 │ import { executeServerQuery, usePlasmicServerQuery } from "@plasmicapp/react-web/lib/data-sources";
+ 9 │ import { groupBy } from "lodash";
+   ╰────
+
+ @ ./src/wab/shared/core/project-deps.ts
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\exprs.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[1:793]
+ 1 │ import { CollectionExpr, CompositeExpr, CustomCode, CustomFunctionExpr, DataSourceOpExpr, DataSourceTemplate, EventHandler, FunctionArg, FunctionExpr, GenericEventHandler, ImageAssetRef, Interaction, isKnownCompositeExpr, isKnownCustomCode, isKnownDataSourceOpExpr, isKnownEventHandler, isKnownExpr, isKnownFunctionArg, isKnownFunctionExpr, isKnownMapExpr, isKnownObjectPath, isKnownPageHref, isKnownQueryInvalidationExpr, isKnownRenderExpr, isKnownStyleExpr, isKnownStyleTokenRef, isKnownTemplatedString, isKnownTplNode, isKnownTplRef, isKnownVariantsRef, isKnownVarRef, MapExpr, ObjectPath, PageHref, QueryInvalidationExpr, RenderExpr, SelectorRuleSet, StrongFunctionArg, StyleExpr, StyleTokenRef, TemplatedString, TplComponent, TplRef, TplTag, VariantsRef, VarRef, VirtualRenderExpr } from "@/wab/shared/model/classes";
+   ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ────────────────────────────
+ 2 │ /* eslint-disable
+ 3 │     no-this-before-super,
+   ╰────
+
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\image-assets.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[8:49]
+  6 │ import { findVariantSettingsUnderTpl, isTplComponent, isTplImage } from "@/wab/shared/core/tpls";
+  7 │ import { joinCssValues, splitCssValue } from "@/wab/shared/css/parse";
+  8 │ import { ImageAsset, isKnownImageAssetRef } from "@/wab/shared/model/classes";
+    ·                                                  ────────────────────────────
+  9 │ import L from "lodash";
+ 10 │ export function cloneImageAsset(asset) {
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\lang.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[5:113]
+ 3 │ import { UNINITIALIZED_VALUE } from "@/wab/shared/core/sites";
+ 4 │ import { cloneType } from "@/wab/shared/core/tpls";
+ 5 │ import { GlobalVariantGroupParam, NameArg, PropParam, SlotParam, StateChangeHandlerParam, StateParam, Var } from "@/wab/shared/model/classes";
+   ·                                                                                                                  ────────────────────────────
+ 6 │ import { convertVariableTypeToWabType, typeFactory } from "@/wab/shared/model/model-util";
+ 7 │ export function jsonParse(json) {
+   ╰────
+
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\metas.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:28]
+ 1 │ import { ensure, tuple } from "@/wab/shared/common";
+ 2 │ import { isKnownType } from "@/wab/shared/model/classes";
+   ·                             ────────────────────────────
+ 3 │ import L from "lodash";
+ 4 │ // import { componentMetasStr as ReactMetasStr } from "./component-metas/react-meta-gen";
+   ╰────
+
+ @ ./src/wab/shared/core/tpls.ts
+ @ ./src/wab/client/dom-utils.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\observable-model.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[13:77]
+ 11 │ import { mutateGlobalObservable } from "@/wab/shared/mobx-util";
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import { ArenaFrame, RuleSet, StyleToken, VariantedValue, isKnownSite } from "@/wab/shared/model/classes";
+    ·                                                                              ────────────────────────────
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 15 │ import { isStrongRefField, isWeakRefField } from "@/wab/shared/model/model-meta";
+    ╰────
+
+ @ ./src/wab/client/init-view-ctx.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\observable-model.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[14:21]
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import { ArenaFrame, RuleSet, StyleToken, VariantedValue, isKnownSite } from "@/wab/shared/model/classes";
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+    ·                      ──────────────────────────────────
+ 15 │ import { isStrongRefField, isWeakRefField } from "@/wab/shared/model/model-meta";
+ 16 │ import { memoize, once } from "lodash";
+    ╰────
+
+ @ ./src/wab/client/init-view-ctx.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\project-deps.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[26:275]
+ 24 │ import { clone, findExprsInComponent, findExprsInNode, flattenTpls, isTplColumns, isTplComponent, isTplImage, isTplNamable, isTplVariantable, replaceTplTreeByEmptyBox } from "@/wab/shared/core/tpls";
+ 25 │ import { ensureComponentsObserved } from "@/wab/shared/mobx-util";
+ 26 │ import { isKnownArenaFrame, isKnownComponent, isKnownEventHandler, isKnownImageAssetRef, isKnownPageHref, isKnownRenderExpr, isKnownStyleTokenRef, isKnownTplSlot, isKnownVariant, isKnownVariantGroup, isKnownVariantedValue, isKnownVariantsRef, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                    ────────────────────────────
+ 27 │ import { renameParamAndFixExprs, renameTplAndFixExprs } from "@/wab/shared/refactoring";
+ 28 │ import { isArray, keys, last, uniqBy } from "lodash";
+    ╰────
+
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\selection.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:31]
+ 1 │ import { assert, ensure, ensureArray, ensureArrayOfInstances, only, switchType } from "@/wab/shared/common";
+ 2 │ import { isKnownTplSlot } from "@/wab/shared/model/classes";
+   ·                                ────────────────────────────
+ 3 │ import { makeSlotSelectionFullKey, makeSlotSelectionKey, SlotSelection } from "@/wab/shared/core/slots";
+ 4 │ import { getTagOrComponentName } from "@/wab/shared/core/tpls";
+   ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\sites.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[26:1053]
+ 24 │ import { getRshContainerType } from "@/wab/shared/layoututils";
+ 25 │ import { maybeComputedFn } from "@/wab/shared/mobx-util";
+ 26 │ import { Arena, ArenaFrameCell, ArenaFrameGrid, ArenaFrameRow, CodeLibrary, CollectionExpr, ComponentArena, CompositeExpr, CustomCode, CustomFunction, CustomFunctionExpr, DataSourceOpExpr, EventHandler, FunctionArg, FunctionExpr, ImageAssetRef, MapExpr, Mixin, ObjectPath, PageArena, PageHref, QueryInvalidationExpr, RenderExpr, RuleSet, Site, StrongFunctionArg, StyleExpr, StyleTokenRef, TemplatedString, Theme, ThemeLayoutSettings, ThemeStyle, TplRef, VarRef, VariantsRef, VirtualRenderExpr, ensureKnownArenaFrame, ensureKnownVariant, ensureMaybeKnownGlobalVariantGroup, ensureMaybeKnownVariantGroup, isKnownComponent, isKnownComponentInstance, isKnownCustomCode, isKnownEventHandler, isKnownExpr, isKnownExprText, isKnownFunctionType, isKnownImageAsset, isKnownImageAssetRef, isKnownMixin, isKnownObjectPath, isKnownPageArena, isKnownPageHref, isKnownRenderExpr, isKnownStrongFunctionArg, isKnownTemplatedString, isKnownTplComponent, isKnownTplNode, isKnownTplRef, isKnownTplTag, isKnownVariant, isKnownVariantedRuleSet, isKnownVariantedValue } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ────────────────────────────
+ 27 │ import { isRenderFuncType, isRenderableType } from "@/wab/shared/model/model-util";
+ 28 │ import { ResponsiveStrategy, defaultResponsiveSettings } from "@/wab/shared/responsiveness";
+    ╰────
+
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\splits.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:143]
+ 1 │ import { mkShortId, removeWhere, switchType } from "@/wab/shared/common";
+ 2 │ import { ComponentSwapSplitContent, ComponentVariantSplitContent, GlobalVariantSplitContent, RandomSplitSlice, SegmentSplitSlice, Split } from "@/wab/shared/model/classes";
+   ·                                                                                                                                                ────────────────────────────
+ 3 │ export var SplitType = /*#__PURE__*/ function(SplitType) {
+ 4 │     SplitType["Experiment"] = "experiment";
+   ╰────
+
+ @ ./src/wab/shared/Variants.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\states.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[13:400]
+ 11 │ import { parseExpr } from "@/wab/shared/eval/expression-parser";
+ 12 │ import { ensureComponentsObserved } from "@/wab/shared/mobx-util";
+ 13 │ import { CustomCode, ensureKnownFunctionType, ensureKnownNamedState, Interaction, isKnownCollectionExpr, isKnownCustomCode, isKnownFunctionArg, isKnownFunctionExpr, isKnownGenericEventHandler, isKnownImageAssetRef, isKnownNamedState, isKnownObjectPath, isKnownPageHref, isKnownTplComponent, isKnownTplRef, isKnownTplTag, isKnownVariantsRef, isKnownVarRef, NamedState, State, VariantGroupState } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                 ────────────────────────────
+ 14 │ import { smartHumanize } from "@/wab/shared/strs";
+ 15 │ import { TplMgr } from "@/wab/shared/TplMgr";
+    ╰────
+
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\styles.ts:1:1
+  × Module not found: Can't resolve '@/wab/gen/cssPegParser' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:30]
+ 1 │ import { extractAllReferencedTokenIds, getExternalMixinPropVarName, getMixinPropVarName, getPlasmicExternalTokenVarName, getTokenVarName, isMixinPropRef, isTokenNameValidCssVariable, isTokenRef, mkMixinPropRef, mkTokenRef, replaceAllTokenRefs, resolveAllTokenRefs, tokenTypeDefaults, tryParseMixinPropRef, tryParseTokenRef } from "@/wab/commons/StyleToken";
+ 2 │ import * as cssPegParser from "@/wab/gen/cssPegParser";
+   ·                               ────────────────────────
+ 3 │ import { getArenaFrames } from "@/wab/shared/Arenas";
+ 4 │ import { RSH, RuleSetHelpers, readonlyRSH } from "@/wab/shared/RuleSetHelpers";
+   ╰────
+
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\styles.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[35:405]
+ 33 │ import { getGoogFontMeta } from "@/wab/shared/googfonts";
+ 34 │ import { isContentLayoutTpl, makeLayoutAwareRuleSet } from "@/wab/shared/layoututils";
+ 35 │ import { Animation, AnimationSequence, KeyFrame, Mixin, RuleSet, SelectorRuleSet, StyleTokenOverride, Theme, ThemeLayoutSettings, ThemeStyle, TplComponent, TplTag, VariantedRuleSet, VariantedValue, ensureKnownStyleScopeClassNamePropType, ensureKnownTplComponent, isKnownClassNamePropType, isKnownStyleExpr, isKnownStyleScopeClassNamePropType, isKnownStyleToken, isKnownStyleTokenRef, isKnownTplTag } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                      ────────────────────────────
+ 36 │ import { deriveSizeStyleValue, deriveSizeStylesForTpl, getViewportAwareHeight, isSizeProp } from "@/wab/shared/sizingutils";
+ 37 │ import { makeGlobalVariantComboSorter, partitionVariants } from "@/wab/shared/variant-sort";
+    ╰────
+
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\tagged-unbundle.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:100]
+ 1 │ import { ensureInstance } from "@/wab/shared/common";
+ 2 │ import { ProjectDependency, Site, ensureKnownProjectDependency, ensureKnownSite, isKnownSite } from "@/wab/shared/model/classes";
+   ·                                                                                                     ────────────────────────────
+ 3 │ export function unbundleSite(bundler, projectId, bundle, depPkgInfos) {
+ 4 │     const depPkgs = depPkgInfos.map((info)=>taggedUnbundle(bundler, info.model, info.id));
+   ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\tokens.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[3:93]
+ 1 │ import { arrayEqIgnoreOrder, mkShortId, remove, removeWhere, switchType } from "@/wab/shared/common";
+ 2 │ import { cloneVariantedValue } from "@/wab/shared/core/styles";
+ 3 │ import { DataToken, StyleToken, StyleTokenOverride, VariantedValue, isKnownStyleToken } from "@/wab/shared/model/classes";
+   ·                                                                                              ────────────────────────────
+ 4 │ export class BaseToken {
+ 5 │     base;
+   ╰────
+
+ @ ./src/wab/shared/core/styles.ts
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\tpls.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[1:1135]
+ 1 │ import { AnyType, Arg, ArgType, Choice, ClassNamePropType, ColorPropType, ColumnsConfig, ColumnsSetting, ComponentInstance, DateRangeStrings, DateString, DefaultStylesClassNamePropType, DefaultStylesPropType, ensureKnownTplComponent, ensureKnownTplNode, Expr, ExprText, FunctionType, HrefType, Img, isKnownArg, isKnownClassNamePropType, isKnownCollectionExpr, isKnownCompositeExpr, isKnownCustomCode, isKnownCustomFunctionExpr, isKnownDataSourceOpExpr, isKnownEventHandler, isKnownExpr, isKnownExprText, isKnownFunctionArg, isKnownFunctionExpr, isKnownFunctionType, isKnownGenericEventHandler, isKnownNodeMarker, isKnownObjectPath, isKnownPageHref, isKnownQueryInvalidationExpr, isKnownRawText, isKnownRenderExpr, isKnownStyleMarker, isKnownTemplatedString, isKnownTplComponent, isKnownTplNode, isKnownTplRef, isKnownTplSlot, isKnownTplTag, isKnownVarRef, isKnownVirtualRenderExpr, NodeMarker, ObjectPath, PlumeInstance, QueryData, QueryRef, RawText, RenderableType, RenderExpr, RenderFuncType, Rep, Scalar, StyleExpr, StyleMarker, StyleScopeClassNamePropType, TargetType, TplComponent, TplNode, TplSlot, TplTag, VariantSetting } from "@/wab/shared/model/classes";
+   ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ────────────────────────────
+ 2 │ import { TAG_TO_HTML_ATTRIBUTES, TAG_TO_HTML_INTERFACE } from "@/wab/component-metas/tag-to-html-interface";
+ 3 │ import { isAdvancedProp } from "@/wab/shared/code-components/code-components";
+   ╰────
+
+ @ ./src/wab/client/dom-utils.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\val-nodes.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+    ╭─[10:24]
+  8 │ import mobx from "@/wab/shared/import-mobx";
+  9 │ import { makeLayoutAwareRuleSet } from "@/wab/shared/layoututils";
+ 10 │ import { TplNode } from "@/wab/shared/model/classes";
+    ·                         ────────────────────────────
+ 11 │ import L, { uniq } from "lodash";
+ 12 │ // Remove `readonly` modifier so the global hook can update the node's children.
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\core\vals.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\core'
+   ╭─[2:59]
+ 1 │ import { switchType, unreachable } from "@/wab/shared/common";
+ 2 │ import { isKnownRenderExpr, isKnownTplNode, TplNode } from "@/wab/shared/model/classes";
+   ·                                                            ────────────────────────────
+ 3 │ import { isPlaceholderValue, UNINITIALIZED_BOOLEAN, UNINITIALIZED_NUMBER, UNINITIALIZED_OBJECT, UNINITIALIZED_STRING } from "@/wab/shared/model/model-util";
+ 4 │ import { SlotSelection } from "@/wab/shared/core/slots";
+   ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\css.ts:1:1
+  × Module not found: Can't resolve '@/wab/gen/cssPegParser' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[1:30]
+ 1 │ import * as cssPegParser from "@/wab/gen/cssPegParser";
+   ·                               ────────────────────────
+ 2 │ import { chunkPairs, ensure, maybes, simpleWords, tryParseNumLit, tuple } from "@/wab/shared/common";
+ 3 │ import { Background, BackgroundLayer, BoxShadows, ColorFill, LinearGradient } from "@/wab/shared/core/bg-styles";
+   ╰────
+
+ @ ./src/wab/shared/visibility-utils.ts
+ @ ./src/wab/client/icons.tsx
+ @ ./src/wab/client/components/widgets.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\css\parse.ts:1:1
+  × Module not found: Can't resolve '@/wab/gen/cssPegParser' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\css'
+   ╭─[1:30]
+ 1 │ import * as cssPegParser from "@/wab/gen/cssPegParser";
+   ·                               ────────────────────────
+ 2 │ /**
+ 3 │  * Joins css values into a single string to store into RuleSet.values.
+   ╰────
+
+ @ ./src/wab/shared/core/bg-styles.ts
+ @ ./src/wab/client/dom-utils.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\data-sources-meta\data-sources.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\data-sources-meta'
+   ╭─[4:117]
+ 2 │ import { asCode, clone, stripParensAndMaybeConvertToIife } from "@/wab/shared/core/exprs";
+ 3 │ import { substitutePlaceholder } from "@/wab/shared/dynamic-bindings";
+ 4 │ import { DataSourceOpExpr, DataSourceTemplate, isKnownTemplatedString, QueryInvalidationExpr, TemplatedString } from "@/wab/shared/model/classes";
+   ·                                                                                                                      ────────────────────────────
+ 5 │ import { AntdConfig } from "@react-awesome-query-builder/antd";
+ 6 │ import { isString, mapValues, merge } from "lodash";
+   ╰────
+
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\effective-variant-setting.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[16:74]
+ 14 │ import { cloneArgs, cloneAttrs, cloneColumnsConfig, cloneDataRep, cloneRichText, fixTextChildren, getOwnerSite, getRichTextContent, isTplComponent, isTplSlot, isTplTag, isTplTextBlock, reconnectChildren } from "@/wab/shared/core/tpls";
+ 15 │ import { makeLayoutAwareRuleSet } from "@/wab/shared/layoututils";
+ 16 │ import { Arg, RuleSet, ensureKnownTplComponent, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                           ────────────────────────────
+ 17 │ import { makeReadonlySizeAwareExpProxy } from "@/wab/shared/sizingutils";
+ 18 │ import { isAncestorCombo, makeVariantComboSorter, sortedVariantSettingStack } from "@/wab/shared/variant-sort";
+    ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\eval\expression-parser.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\eval'
+   ╭─[7:111]
+ 5 │ import { DEVFLAGS } from "@/wab/shared/devflags";
+ 6 │ import { ENABLED_GLOBALS } from "@/wab/shared/eval";
+ 7 │ import { isKnownCustomCode, isKnownExpr, isKnownFunctionExpr, isKnownObjectPath, isKnownTemplatedString } from "@/wab/shared/model/classes";
+   ·                                                                                                                ────────────────────────────
+ 8 │ import { isBlockScope, isScope, parseJsCode, wrapJavaScriptCodeInParens, writeJs } from "@/wab/shared/parser-utils";
+ 9 │ import { isValidJsIdentifier } from "@/wab/shared/utils/regex-js-identifier";
+   ╰────
+
+ @ ./src/wab/shared/core/exprs.ts
+ @ ./src/wab/client/tours/tutorials/frags/form-items-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\grid-utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/gen/GridStyleParser' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[1:28]
+ 1 │ import GridStyleParser from "@/wab/gen/GridStyleParser";
+   ·                             ───────────────────────────
+ 2 │ import { readonlyRSH } from "@/wab/shared/RuleSetHelpers";
+ 3 │ import { ensure } from "@/wab/shared/common";
+   ╰────
+
+ @ ./src/wab/client/components/sidebar-tabs/Sections.tsx
+ @ ./src/wab/client/components/sidebar-tabs/style-tab.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates\component-importer.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates'
+    ╭─[12:38]
+ 10 │ import { ensureValidClonedComponent, makeImageAssetFixer, makeTplAnimationsFixer } from "@/wab/shared/insertable-templates/fixers";
+ 11 │ import { ensureHostLessDepComponent } from "@/wab/shared/insertable-templates/inliners";
+ 12 │ import { ComponentTemplateInfo } from "@/wab/shared/model/classes";
+    ·                                       ────────────────────────────
+ 13 │ import { makeComponentSwapper } from "@/wab/shared/swap-components";
+ 14 │ export function importComponentsInTree(targetSite, tplTree, ownerComponent, importer) {
+    ╰────
+
+ @ ./src/wab/shared/insertable-templates.ts
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates\fixers.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates'
+    ╭─[17:294]
+ 15 │ import { getEffectiveVariantSettingForInsertable } from "@/wab/shared/effective-variant-setting";
+ 16 │ import { inlineMixins, inlineTokens } from "@/wab/shared/insertable-templates/inliners";
+ 17 │ import { CompositeExpr, CustomCode, EventHandler, ImageAssetRef, ObjectPath, PageHref, RenderExpr, RuleSet, StyleExpr, TemplatedString, VarRef, VariantsRef, VirtualRenderExpr, isKnownCustomCode, isKnownExprText, isKnownObjectPath, isKnownStyleExpr, isKnownTemplatedString, isKnownTplTag } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                       ────────────────────────────
+ 18 │ import { isString } from "lodash";
+ 19 │ export function ensureTplWithBaseAndScreenVariants(tpl, targetBaseVariant, screenVariant) {
+    ╰────
+
+ @ ./src/wab/shared/core/sites.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates\inliners.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\insertable-templates'
+    ╭─[17:130]
+ 15 │ import { adaptEffectiveVariantSetting, getActiveVariantsInArg, getEffectiveVariantSettingForInsertable } from "@/wab/shared/effective-variant-setting";
+ 16 │ import { fixGlobalVariants } from "@/wab/shared/insertable-templates/fixers";
+ 17 │ import { Arg, CustomCode, RenderExpr, VariantsRef, isKnownCustomCode, isKnownRenderExpr, isKnownTplTag, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                   ────────────────────────────
+ 18 │ import { flatten } from "lodash";
+ 19 │ /**
+    ╰────
+
+ @ ./src/wab/shared/insertable-templates/fixers.ts
+ @ ./src/wab/shared/core/sites.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\linting\invalid-nesting\lint-invalid-nesting-tpl.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\linting\invalid-nesting'
+   ╭─[1:81]
+ 1 │ import { isKnownRenderExpr, isKnownTplSlot, TplComponent, TplSlot, TplTag } from "@/wab/shared/model/classes";
+   ·                                                                                  ────────────────────────────
+ 2 │ import { switchType } from "@/wab/shared/common";
+ 3 │ import { isCodeComponent } from "@/wab/shared/core/components";
+   ╰────
+
+ @ ./src/wab/shared/linting/lint-utils.ts
+ @ ./src/wab/client/components/sidebar/LeftLintIssuesPanel.tsx
+ @ ./src/wab/client/components/studio/LeftPane.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\linting\lint-choice-prop-values.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\linting'    ╭─[10:28]
+  8 │ import { lintIssuesEquals } from "@/wab/shared/linting/lint-utils";
+  9 │ import { maybeComputedFn } from "@/wab/shared/mobx-util";
+ 10 │ import { isKnownExpr } from "@/wab/shared/model/classes";
+    ·                             ────────────────────────────
+ 11 │ import { isNumber, isObject, isString } from "lodash";
+ 12 │ const TYPE = "choice-prop-values";
+    ╰────
+
+ @ ./src/wab/client/components/sidebar-tabs/PropEditorRow.tsx
+ @ ./src/wab/client/components/modals/PreInsertionModal.tsx
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\localization.tsx:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[11:48]
+  9 │ import { getCssRulesFromRs } from "@/wab/shared/css";
+ 10 │ import { EffectiveVariantSetting } from "@/wab/shared/effective-variant-setting";
+ 11 │ import { isKnownExprText, isKnownRawText } from "@/wab/shared/model/classes";
+    ·                                                 ────────────────────────────
+ 12 │ import { makeVariantComboSorter, sortedVariantSettings } from "@/wab/shared/variant-sort";
+ 13 │ import { ensureValidCombo, getBaseVariant, isBaseVariant, tryGetBaseVariantSetting } from "@/wab/shared/Variants";    ╰────
+
+ @ ./src/wab/shared/codegen/react-p/index.ts
+ @ ./src/wab/shared/site-diffs/index.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\model\InstUtil.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\model'
+   ╭─[2:25]
+ 1 │ import { ensure, tuple, xor } from "@/wab/shared/common";
+ 2 │ import * as classes from "@/wab/shared/model/classes";
+   ·                          ────────────────────────────
+ 3 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 4 │ import L from "lodash";
+   ╰────
+
+ @ ./src/wab/shared/bundler.ts
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\model\InstUtil.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\model'
+   ╭─[3:21]
+ 1 │ import { ensure, tuple, xor } from "@/wab/shared/common";
+ 2 │ import * as classes from "@/wab/shared/model/classes";
+ 3 │ import { meta } from "@/wab/shared/model/classes-metas";
+   ·                      ──────────────────────────────────
+ 4 │ import L from "lodash";
+ 5 │ export class InstUtil {
+   ╰────
+
+ @ ./src/wab/shared/bundler.ts
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-change-util.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\model'
+    ╭─[10:437]
+  8 │ import { ALWAYS_RESOLVE_MIXIN_PROPS, SIZE_PROPS, plasmicImgAttrStyles } from "@/wab/shared/core/style-props";
+  9 │ import { findVariantSettingsUnderTpl, flattenTpls, isComponentRoot, isTplColumns, isTplComponent, isTplSlot, isTplTag, isTplVariantable } from "@/wab/shared/core/tpls";
+ 10 │ import { Component, Mixin, RuleSet, ThemeLayoutSettings, TplNode, VariantSetting, isKnownColumnsConfig, isKnownComponent, isKnownDataToken, isKnownImageAsset, isKnownMixin, isKnownProjectDependency, isKnownRuleSet, isKnownSite, isKnownStyleToken, isKnownStyleTokenOverride, isKnownTheme, isKnownThemeStyle, isKnownTplNode, isKnownVariant, isKnownVariantGroup, isKnownVariantSetting, isKnownVariantedRuleSet, isKnownVariantedValue } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                      ────────────────────────────
+ 11 │ import { hasSpecialSizeVal } from "@/wab/shared/sizingutils";
+ 12 │ import L, { omit } from "lodash";
+    ╰────
+
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/tours/tutorials/frags/add-query-steps.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-meta.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-tree-util.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\model'
+   ╭─[3:21]
+ 1 │ import { assert, isLiteralObject, isPrimitive, tuple, unexpected } from "@/wab/shared/common";
+ 2 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 3 │ import { meta } from "@/wab/shared/model/classes-metas";
+   ·                      ──────────────────────────────────
+ 4 │ import { isWeakRefField } from "@/wab/shared/model/model-meta";
+ 5 │ import { zip } from "lodash";
+   ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-util.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\model'
+   ╭─[5:680]
+ 3 │ import { getComponentDisplayName } from "@/wab/shared/core/components";
+ 4 │ import { isTplComponent, isTplFromComponent, isTplTextBlock, resolveTplRoot } from "@/wab/shared/core/tpls";
+ 5 │ import { AnyType, ArgType, BoolType, Choice, ClassNamePropType, ColorPropType, ComponentInstance, DateRangeStrings, DateString, DefaultStylesClassNamePropType, DefaultStylesPropType, FunctionType, HrefType, Img, isKnownAnyType, isKnownArgType, isKnownBoolType, isKnownChoice, isKnownClassNamePropType, isKnownComponentInstance, isKnownDefaultStylesClassNamePropType, isKnownFunctionType, isKnownImg, isKnownNum, isKnownPlumeInstance, isKnownQueryData, isKnownRenderableType, isKnownRenderFuncType, isKnownStyleScopeClassNamePropType, isKnownText, LabeledSelector, Num, PlumeInstance, QueryData, RenderableType, RenderFuncType, StyleScopeClassNamePropType, TargetType, Text } from "@/wab/shared/model/classes";
+   ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ────────────────────────────
+ 6 │ import { instUtil as defaultInstUtil } from "@/wab/shared/model/InstUtil";
+ 7 │ import { Type as ModelType } from "@/wab/shared/model/model-meta";
+   ╰────
+
+ @ ./src/wab/shared/bundler.ts
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\page-arenas.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[8:143]
+  6 │ import { allComponentVariants } from "@/wab/shared/core/components";
+  7 │ import { allGlobalVariants, getResponsiveStrategy, getSiteScreenSizes } from "@/wab/shared/core/sites";
+  8 │ import { ArenaFrameCell, ArenaFrameGrid, ArenaFrameRow, ensureKnownVariant, ensureMaybeKnownVariant, isKnownVariant, PageArena, Variant } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                ────────────────────────────
+  9 │ import { ResponsiveStrategy } from "@/wab/shared/responsiveness";
+ 10 │ import { ensureVariantSetting, isBaseVariant, isGlobalVariant, isPrivateStyleVariant, isScreenVariant, isScreenVariantGroup, makeVariantName } from "@/wab/shared/Variants";
+    ╰────
+
+ @ ./src/wab/shared/TplMgr.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\parenting.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[9:49]
+  7 │ import { getComponentIfRoot, getParentTplOrSlotSelection, hasChildrenSlot, hasTextAncestor, isAtomicTag, isTableNonLeafElement, isTableSubElement, isTableTopElement, isTplComponent, isTplImage, isTplSlot, isTplTag, isTplTextBlock } from "@/wab/shared/core/tpls";
+  8 │ import { ValNode } from "@/wab/shared/core/val-nodes";
+  9 │ import { isKnownSlotParam, isKnownTplSlot } from "@/wab/shared/model/classes";
+    ·                                                  ────────────────────────────
+ 10 │ import { nodeConformsToType } from "@/wab/shared/model/model-util";
+ 11 │ import { getPlumeEditorPlugin } from "@/wab/shared/plume/plume-registry";
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\plume\select.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\plume'
+    ╭─[11:41]
+  9 │ import { ensure, withoutNils } from "@/wab/shared/common";
+ 10 │ import { codeLit } from "@/wab/shared/core/exprs";
+ 11 │ import { isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                          ────────────────────────────
+ 12 │ import { typeFactory } from "@/wab/shared/model/model-util";
+ 13 │ import { ensureValidPlumeCodeMeta, isPlumeTypeElement, makeComponentImportPath, maybeIncludeSerializedDefaultSlotContent, traverseReactEltTree } from "@/wab/shared/plume/plume-utils";
+    ╰────
+
+ @ ./src/wab/shared/plume/plume-registry.ts
+ @ ./src/wab/client/components/studio/add-drawer/AddDrawer.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\refactoring.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[9:109]
+  7 │ import * as Tpls from "@/wab/shared/core/tpls";
+  8 │ import { extractDataTokenIdentifiersFromCode, isPathDataToken, makeDataTokenIdentifier, parseCode, parseExpr, renameObjectKey, replaceMemberExpression, replaceVarWithProp, transformDataTokensInExpr } from "@/wab/shared/eval/expression-parser";
+  9 │ import { isKnownCustomCode, isKnownFunctionExpr, isKnownObjectPath, isKnownVarRef, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                                                              ────────────────────────────
+ 10 │ import { get } from "lodash";
+ 11 │ /**
+    ╰────
+
+ @ ./src/wab/shared/core/components.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\server-updates-utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[9:1000]
+  7 │ import { removeMarkersToTpl, replaceTplTreeByEmptyBox, tplChildren, trackComponentRoot, trackComponentSite, tryGetTplOwnerComponent } from "@/wab/shared/core/tpls";
+  8 │ import { undoChanges } from "@/wab/shared/core/undo-util";
+  9 │ import { ArenaFrame, ArenaFrameCell, ArenaFrameGrid, ArenaFrameRow, Arg, CollectionExpr, ColumnsSetting, Component, ComponentArena, ComponentInstance, ComponentVariantGroup, CompositeExpr, CustomCode, DataSourceOpExpr, ensureKnownEventHandler, FunctionArg, FunctionExpr, ImageAssetRef, Interaction, isKnownArenaFrame, isKnownArgType, isKnownComponent, isKnownComponentDataQuery, isKnownExpr, isKnownImageAsset, isKnownMixin, isKnownParam, isKnownRenderExpr, isKnownState, isKnownStyleToken, isKnownTheme, isKnownTplNode, isKnownVar, isKnownVariant, isKnownVariantGroup, isKnownVariantSetting, MapExpr, Mixin, NameArg, NodeMarker, ObjectPath, PageArena, PageHref, PageMeta, Param, QueryInvalidationExpr, QueryRef, RawText, RenderableType, RenderFuncType, RuleSet, Site, SlotParam, Split, SplitContent, SplitSlice, State, StrongFunctionArg, StyleToken, StyleTokenRef, TplComponent, TplNode, TplRef, TplSlot, TplTag, Variant, VariantedRuleSet, VariantedValue, VariantSetting, VariantsRef, VarRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ────────────────────────────
+ 10 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 11 │ import { isBaseVariant, isScreenVariantGroup, tryGetBaseVariantSetting } from "@/wab/shared/Variants";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\index.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+    ╭─[14:562]
+ 12 │ import { isPrivateState } from "@/wab/shared/core/states";
+ 13 │ import { flattenTpls, isTplComponent, isTplNamable, isTplSlot, isTplVariantable } from "@/wab/shared/core/tpls";
+ 14 │ import { CollectionExpr, CompositeExpr, CustomCode, CustomFunctionExpr, DataSourceOpExpr, DataToken, EventHandler, FunctionArg, FunctionExpr, ImageAsset, ImageAssetRef, MapExpr, Mixin, ObjectPath, PageHref, Param, ProjectDependency, QueryInvalidationExpr, RenderExpr, Split, StyleExpr, StyleToken, StyleTokenOverride, StyleTokenRef, TemplatedString, TplNode, TplRef, VarRef, VariantGroup, VariantsRef, isKnownComponent, isKnownExprText, isKnownNodeMarker, isKnownRawText, isKnownStateChangeHandlerParam, isKnownStyleMarker, isKnownTplSlot, isKnownVariant } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ────────────────────────────
+ 15 │ import L, { isString, mapValues } from "lodash";
+ 16 │ export const INITIAL_VERSION_NUMBER = "0.0.1";
+    ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\merge-components.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+    ╭─[13:262]
+ 11 │ import { fixParentPointers, mkTplComponentX, tplChildren, trackComponentRoot, trackComponentSite } from "@/wab/shared/core/tpls";
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import { Arg, Component, RenderExpr, TplComponent, TplSlot, TplTag, ensureKnownRenderExpr, ensureKnownTplComponent, ensureKnownTplSlot, ensureKnownTplTag, isKnownRenderExpr, isKnownTplComponent, isKnownTplTag, isKnownVariantsRef, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                                                                                                                       ────────────────────────────
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 15 │ import { assertSameInstType } from "@/wab/shared/model/model-tree-util";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\merge-components.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+    ╭─[14:21]
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import { Arg, Component, RenderExpr, TplComponent, TplSlot, TplTag, ensureKnownRenderExpr, ensureKnownTplComponent, ensureKnownTplSlot, ensureKnownTplTag, isKnownRenderExpr, isKnownTplComponent, isKnownTplTag, isKnownVariantsRef, isKnownVirtualRenderExpr } from "@/wab/shared/model/classes";
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+    ·                      ──────────────────────────────────
+ 15 │ import { assertSameInstType } from "@/wab/shared/model/model-tree-util";
+ 16 │ import { reorderPageArenaCols } from "@/wab/shared/page-arenas";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\merge-core.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+    ╭─[13:25]
+ 11 │ import mobx from "@/wab/shared/import-mobx";
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import * as classes from "@/wab/shared/model/classes";
+    ·                          ────────────────────────────
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 15 │ import { isWeakRefField, withoutUids } from "@/wab/shared/model/model-meta";
+    ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\merge-core.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+    ╭─[14:21]
+ 12 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 13 │ import * as classes from "@/wab/shared/model/classes";
+ 14 │ import { meta } from "@/wab/shared/model/classes-metas";
+    ·                      ──────────────────────────────────
+ 15 │ import { isWeakRefField, withoutUids } from "@/wab/shared/model/model-meta";
+ 16 │ import { areSameInstType, assertSameInstType, createNodeCtx, nextCtx, walkModelTree } from "@/wab/shared/model/model-tree-util";
+    ╰────
+
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\merge-tokens.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+   ╭─[6:41]
+ 4 │ import { extractTokenUsages } from "@/wab/shared/core/styles";
+ 5 │ import { MutableToken, OverrideableToken } from "@/wab/shared/core/tokens";
+ 6 │ import { ensureKnownStyleTokenRef } from "@/wab/shared/model/classes";
+   ·                                          ────────────────────────────
+ 7 │ export function fixDuplicatedRegisteredTokens(mergedSite) {
+ 8 │     const tokensByRegKey = {};
+   ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\model-conflicts-meta.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+   ╭─[5:25]
+ 3 │ import { assert, ensure, ensureInstance, switchType, unexpected } from "@/wab/shared/common";
+ 4 │ import { isCodeComponent, isFrameComponent } from "@/wab/shared/core/components";
+ 5 │ import * as classes from "@/wab/shared/model/classes";
+   ·                          ────────────────────────────
+ 6 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 7 │ import { Type, isWeakRefField } from "@/wab/shared/model/model-meta";
+   ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs\model-conflicts-meta.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\site-diffs'
+   ╭─[6:21]
+ 4 │ import { isCodeComponent, isFrameComponent } from "@/wab/shared/core/components";
+ 5 │ import * as classes from "@/wab/shared/model/classes";
+ 6 │ import { meta } from "@/wab/shared/model/classes-metas";
+   ·                      ──────────────────────────────────
+ 7 │ import { Type, isWeakRefField } from "@/wab/shared/model/model-meta";
+ 8 │ import { mergeComponentUpdatedAt, mergeComponentVariants, mergeTplNodeChildren, mergeVSettings, tryMergeComponents, tryMergeGlobalContexts } from "@/wab/shared/site-diffs/merge-components";
+   ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-invariants.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[18:165]
+ 16 │ import { maybeComputedFn } from "@/wab/shared/mobx-util";
+ 17 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 18 │ import { isKnownArenaFrame, isKnownRenderExpr, isKnownStateChangeHandlerParam, isKnownStateParam, isKnownVarRef, isKnownVariantGroupState, isKnownVariantsRef } from "@/wab/shared/model/classes";
+    ·                                                                                                                                                                      ────────────────────────────
+ 19 │ import { meta } from "@/wab/shared/model/classes-metas";
+ 20 │ import { createNodeCtx, walkModelTree } from "@/wab/shared/model/model-tree-util";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\site-invariants.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes-metas' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[19:21]
+ 17 │ import { instUtil } from "@/wab/shared/model/InstUtil";
+ 18 │ import { isKnownArenaFrame, isKnownRenderExpr, isKnownStateChangeHandlerParam, isKnownStateParam, isKnownVarRef, isKnownVariantGroupState, isKnownVariantsRef } from "@/wab/shared/model/classes";
+ 19 │ import { meta } from "@/wab/shared/model/classes-metas";
+    ·                      ──────────────────────────────────
+ 20 │ import { createNodeCtx, walkModelTree } from "@/wab/shared/model/model-tree-util";
+ 21 │ import { modelConflictsMeta } from "@/wab/shared/site-diffs/model-conflicts-meta";
+    ╰────
+
+ @ ./src/wab/shared/site-diffs/merge-core.ts
+ @ ./src/wab/client/components/merge/MergeFlow.tsx
+ @ ./src/wab/client/components/TopFrame/TopFrameChrome.tsx
+ @ ./src/wab/client/components/studio/studio-frame.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\sizingutils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[16:30]
+ 14 │ import { ContainerLayoutType, getRshContainerType } from "@/wab/shared/layoututils";
+ 15 │ import { keyedComputedFn } from "@/wab/shared/mobx-util";
+ 16 │ import { isKnownTplTag } from "@/wab/shared/model/classes";
+    ·                               ────────────────────────────
+ 17 │ import { generate, parse, walk } from "css-tree";
+ 18 │ import memoizeOne from "memoize-one";
+    ╰────
+
+ @ ./src/wab/client/components/canvas/view-ops.tsx
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\swap-components.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+   ╭─[7:111]
+ 5 │ import { ensureCorrectImplicitStates, isPublicState, removeComponentState } from "@/wab/shared/core/states";
+ 6 │ import { isTplComponent } from "@/wab/shared/core/tpls";
+ 7 │ import { isKnownCustomCode, isKnownObjectPath, isKnownRenderExpr, isKnownStateParam, isKnownVariantsRef } from "@/wab/shared/model/classes";
+   ·                                                                                                                ────────────────────────────
+ 8 │ import { wabToTsType } from "@/wab/shared/model/model-util";
+ 9 │ import { isSlot } from "@/wab/shared/SlotUtils";
+   ╰────
+
+ @ ./src/wab/shared/TplMgr.ts
+ @ ./src/wab/client/tours/tutorials/tutorials-helpers.ts
+ @ ./src/wab/client/components/pages/admin/AdminPage.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\utils\split-site-utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared\utils'
+   ╭─[6:32]
+ 4 │ import { convertHrefExprToCodeExpr } from "@/wab/shared/core/exprs";
+ 5 │ import { flattenTpls } from "@/wab/shared/core/tpls";
+ 6 │ import { isKnownPageHref } from "@/wab/shared/model/classes";
+   ·                                 ────────────────────────────
+ 7 │ /**
+ 8 │  * Fixes any PageHref in Site to point to local pages. At this point,
+   ╰────
+
+ @ ./src/wab/client/init-ctx.tsx
+ @ ./src/wab/client/init-view-ctx.ts
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\shared\visibility-utils.ts:1:1
+  × Module not found: Can't resolve '@/wab/shared/model/classes' in 'C:\tmp-plasmik\platform\wab\src\wab\shared'
+    ╭─[12:27]
+ 10 │ import { getEffectiveVariantSetting, getTplComponentActiveVariantsByVs } from "@/wab/shared/effective-variant-setting";
+ 11 │ import { tryEvalExpr } from "@/wab/shared/eval";
+ 12 │ import { ObjectPath } from "@/wab/shared/model/classes";
+    ·                            ────────────────────────────
+ 13 │ // When doing "DisplayNone" in css, we set `display: none`.  However,
+ 14 │ // we don't actually want to set that in our RuleSet, because
+    ╰────
+
+ @ ./src/wab/client/icons.tsx
+ @ ./src/wab/client/components/widgets.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\BottomModal.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                          @import
+        │   ..\..\..\..\src\wab\styles\_utils.sass 1:9                         @import
+        │   ..\..\..\..\src\wab\client\components\BottomModal.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\VariantControls.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\VariantControls.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\app-auth\DirectoryUserRow.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import 'src/wab/styles/_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\app-auth\DirectoryUserRow.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\CanvasFrame\CanvasFrame.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/css-variables";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\CanvasFrame\CanvasFrame.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\Controls\GapCanvasControls.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\Controls\GapCanvasControls.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\Controls\ImageCanvasControls.module.scss:1:1  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\Controls\ImageCanvasControls.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/css-variables";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\InlineAddButton.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\InlineAddButton.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\SpacingVisualizer.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens"
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\SpacingVisualizer.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\StackOfParents.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/css-variables";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss 1:9        @import
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\StackOfParents.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\canvas\HoverBox\draggable-edge.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens"
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\draggable-edge.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\github\GithubIntegration.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                       @import
+        │   ..\..\..\..\src\wab\client\components\github\GithubIntegration.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\modals\ContentEditorConfigModal.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/_tokens.sass";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\modals\ContentEditorConfigModal.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\pages\AuthForm.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                      @import
+        │   ..\..\..\..\src\wab\client\components\pages\AuthForm.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\ComponentProps\TemplatedTextEditor.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                                              @import
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\ComponentProps\TemplatedTextEditor.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\DataSource\DataSourceOpPicker.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\DataSource\DataSourceOpPicker.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\FlexContainerControls.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\FlexContainerControls.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\ProjectPanel\ProjectPanelTop.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\ProjectPanel\ProjectPanelTop.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\ResponsiveColumns\ColumnsSizeControls.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\ResponsiveColumns\ColumnsSizeControls.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\SizeSection.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\SizeSection.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\VisibilitySection.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\VisibilitySection.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar-tabs\outline-tab.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar-tabs\outline-tab.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\sidebar\SidebarSection.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\sidebar\SidebarSection.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\studio\FocusedModeToolbar\FocusedModeToolbar.module.scss:1:1  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\studio\FocusedModeToolbar\FocusedModeToolbar.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\studio\arenas\ComponentArenaLayout.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                                 @import
+        │   ..\..\..\..\src\wab\client\components\studio\arenas\ComponentArenaLayout.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\studio\arenas\GhostFrame.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                       @import
+        │   ..\..\..\..\src\wab\client\components\studio\arenas\GhostFrame.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\studio\arenas\GridFramesLayout.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import 'src/wab/styles/_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\studio\arenas\GridFramesLayout.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\BorderControls.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                            @import
+        │   ..\..\..\..\src\wab\client\components\style-controls\BorderControls.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\DefinedIndicator.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                              @import
+        │   ..\..\..\..\src\wab\client\components\style-controls\DefinedIndicator.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\FilterEffectPanel.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import 'src/wab/styles/_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\style-controls\FilterEffectPanel.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\GridEditor.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                        @import
+        │   ..\..\..\..\src\wab\styles\_mixins.sass 3:9                                      @import
+        │   ..\..\..\..\src\wab\client\components\style-controls\GridEditor.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\style-controls\PosControls.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                         @import
+        │   ..\..\..\..\src\wab\styles\_mixins.sass 3:9                                       @import
+        │   ..\..\..\..\src\wab\client\components\style-controls\PosControls.module.sass 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\variants\VariantComboPicker.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\variants\VariantComboPicker.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\webhooks\WebhooksItem.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9                                    @import
+        │   ..\..\..\..\src\wab\client\components\webhooks\WebhooksItem.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\client\components\widgets\EditableLabel\EditableLabel.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\widgets\EditableLabel\EditableLabel.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\commons\components\HighlightBlinker.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 1 │ @import "src/wab/styles/tokens";
+        │   │         ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\commons\components\HighlightBlinker.module.scss 1:9  root stylesheet
+
+File: C:\tmp-plasmik\platform\wab\src\wab\styles\main.sass:1:1
+  × Module build failed:
+  ╰─▶   × Can't find stylesheet to import.
+        │   ╷
+        │ 3 │ @import './_tokens.sass'
+        │   │         ^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\_vars.sass 3:9  @import
+        │   ..\..\..\..\src\wab\styles\main.sass 3:9   root stylesheet
+
+

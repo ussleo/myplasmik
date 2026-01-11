@@ -1,0 +1,171 @@
+Build failed
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\dev-build/static/styles/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\dev-build/static/styles/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../live-frame/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../live-frame/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../react-web-bundle/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../react-web-bundle/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../canvas-packages/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../canvas-packages/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../loader-html-hydrate/build/' glob
+
+× unable to locate 'C:\tmp-plasmik\platform\wab\../loader-html-hydrate/build/' glob
+
+File: .\src\wab\client\components\canvas\CanvasFrame\CanvasFrame.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/components/canvas/CanvasFrame/CanvasFrame.tsx
+ @ ./src/wab/client/components/canvas/CanvasFrame/index.ts
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/components/canvas/HoverBox/HoverBoxes.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\client\components\canvas\HoverBox\InlineAddButton.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/components/canvas/HoverBox/InlineAddButton.tsx
+ @ ./src/wab/client/components/canvas/HoverBox/HoverBoxes.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\client\components\canvas\HoverBox\StackOfParents.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/components/canvas/HoverBox/StackOfParents.tsx
+ @ ./src/wab/client/components/canvas/HoverBox/HoverBoxes.tsx
+ @ ./src/wab/client/components/studio/view-editor.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\client\components\studio\arenas\GridFramesLayout.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/studio-ctx/StudioCtx.tsx
+ @ ./src/wab/client/components/studio/studio-initializer.tsx
+ @ ./src/wab/client/components/studio/view-initializer.tsx
+ @ ./src/wab/client/components/root-view.tsx
+ @ ./src/wab/client/components/Shell.tsx
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\styles\main.sass:1:1
+  × Module build failed:
+  ╰─▶   × TypeError: Cannot read properties of undefined (reading '__esModule')
+        │     at handleExports (.\node_modules\@rspack\core\dist\cssExtractLoader.js:89:44)
+        │     at .\node_modules\@rspack\core\dist\cssExtractLoader.js:144:9
+        │     at .\node_modules\@rspack\core\dist\index.js:3448:255
+        │     at .\node_modules\@rspack\core\dist\index.js:3444:127
+      
+ @ ./src/wab/client/main.tsx
+
+File: .\src\wab\client\components\canvas\CanvasFrame\CanvasFrame.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │   ╷
+        │ 6 │     transform: scale($inverseZoom) !important;
+        │   │                      ^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\CanvasFrame\CanvasFrame.module.scss 6:22  root stylesheet
+
+File: .\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │    ╷
+        │ 39 │   border: 1px solid $selectionControlsColor;
+        │    │                     ^^^^^^^^^^^^^^^^^^^^^^^
+        │    ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss 39:21  root stylesheet
+
+File: .\src\wab\client\components\canvas\HoverBox\InlineAddButton.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │    ╷
+        │ 35 │     background: $selectionControlsColor;
+        │    │                 ^^^^^^^^^^^^^^^^^^^^^^^
+        │    ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\InlineAddButton.module.scss 35:17  root stylesheet
+
+File: .\src\wab\client\components\canvas\HoverBox\StackOfParents.module.scss:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │    ╷
+        │ 39 │   border: 1px solid $selectionControlsColor;
+        │    │                     ^^^^^^^^^^^^^^^^^^^^^^^
+        │    ╵
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\HoverBox.module.scss 39:21      @import
+        │   ..\..\..\..\src\wab\client\components\canvas\HoverBox\StackOfParents.module.scss 1:9  root stylesheet
+
+File: .\src\wab\client\components\studio\arenas\GridFramesLayout.module.sass:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │   ╷
+        │ 9 │     margin-top: $gridSpacing
+        │   │                 ^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\client\components\studio\arenas\GridFramesLayout.module.sass 9:17  root stylesheet
+
+File: .\src\wab\styles\main.sass:1:1
+  × Module build failed:
+  ╰─▶   × Undefined variable.
+        │   ╷
+        │ 8 │ $node-outline-color: $selectionControlsColor
+        │   │                      ^^^^^^^^^^^^^^^^^^^^^^^
+        │   ╵
+        │   ..\..\..\..\src\wab\styles\main.sass 8:22  root stylesheet
+Fix error, click outside, or press Esc to close the overlay.
+
+Disable overlay by setting Rsbuild's dev.client.overlay config to false.

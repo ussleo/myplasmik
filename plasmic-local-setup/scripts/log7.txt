@@ -1,0 +1,44 @@
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\generate_artifacts.ps1                                                 ⚙️  Generando Artefactos de Plasmic...
+🔨 Generando: Modelos...npm warn Unknown env config "argv". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm.
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+ [ERROR]
+🔨 Generando: Meta Componentes...npm warn Unknown env config "argv". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm.
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+ [ERROR]
+🔨 Generando: Tokens SASS...npm warn Unknown env config "argv". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm.
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+ [ERROR]
+🔨 Generando: Tokens TS...npm warn Unknown env config "argv". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm.
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+ [ERROR]
+🔍 Verificando carpeta 'gen'...
+
+✅ Generación finalizada. Intenta arrancar los servidores de nuevo.
+Name
+----
+.gitkeep
+css-peg-parser.spec.ts

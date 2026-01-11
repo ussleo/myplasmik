@@ -1,0 +1,195 @@
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\generate_artifacts.ps1                                                 ⚙️  Generando Artefactos de Plasmic (Modo Nativo)...
+🔨 Ejecutando: tools/gen-models.ts...node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module '@/wab/gen/modelPegParser'
+Require stack:
+- C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-generator.ts
+- C:\tmp-plasmik\platform\wab\tools\gen-models.ts
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1401:15)
+    at Module._resolveFilename (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:4794:36)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-generator.ts:16:24) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\tmp-plasmik\\platform\\wab\\src\\wab\\shared\\model\\model-generator.ts',
+    'C:\\tmp-plasmik\\platform\\wab\\tools\\gen-models.ts'
+  ]
+}
+
+Node.js v22.16.0
+ [ERROR (1)]
+🔨 Ejecutando: tools/gen-react-meta.ts...Error reading file TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:563:5)
+    at Object.readFileSync (node:fs:446:35)
+    at readTypedocJson (C:\tmp-plasmik\platform\wab\tools\gen-react-meta.ts:35:26)
+    at main (C:\tmp-plasmik\platform\wab\tools\gen-react-meta.ts:45:22)
+    at Object.<anonymous> (C:\tmp-plasmik\platform\wab\tools\gen-react-meta.ts:224:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:2258:26)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.newLoader [as .ts] (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:2262:9)
+    at Module.load (node:internal/modules/cjs/loader:1465:32) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ [ERROR (1)]
+🔨 Ejecutando: tools/gen-theo.ts...Token "basic-container-background" has 2 duplicates
+Token "basic-container-background-dark" has 2 duplicates
+Token "basic-text-primary" has 2 duplicates
+Token "brand-brand" has 2 duplicates
+Token "brand-brand-border" has 2 duplicates
+Token "brand-brand-foreground" has 2 duplicates
+Token "brand-brand-soft" has 2 duplicates
+Token "brand-brand-soft-foreground" has 2 duplicates
+Token "destructive-destructive" has 2 duplicates
+Token "destructive-destructive-border" has 2 duplicates
+Token "destructive-destructive-foreground" has 2 duplicates
+Token "destructive-destructive-soft" has 2 duplicates
+Token "destructive-destructive-soft-foreground" has 2 duplicates
+Token "font-lg" has 2 duplicates
+Token "font-md" has 2 duplicates
+Token "font-sm" has 2 duplicates
+Token "interaction-disabled" has 2 duplicates
+Token "interaction-hovered" has 2 duplicates
+Token "interaction-pressed" has 2 duplicates
+Token "line-height-lg" has 2 duplicates
+Token "line-height-md" has 2 duplicates
+Token "line-height-sm" has 2 duplicates
+Token "muted-muted" has 2 duplicates
+Token "muted-muted-border" has 2 duplicates
+Token "muted-muted-foreground" has 2 duplicates
+Token "muted-muted-soft" has 2 duplicates
+Token "muted-muted-soft-foreground" has 2 duplicates
+Token "neutral-neutral" has 2 duplicates
+Token "neutral-neutral-border" has 2 duplicates
+Token "neutral-neutral-foreground" has 2 duplicates
+Token "neutral-neutral-soft" has 2 duplicates
+Token "neutral-neutral-soft-foreground" has 2 duplicates
+Token "sans-serif" has 2 duplicates
+Token "size-10" has 2 duplicates
+Token "size-12" has 2 duplicates
+Token "size-16" has 2 duplicates
+Token "size-2" has 2 duplicates
+Token "size-4" has 2 duplicates
+Token "size-6" has 2 duplicates
+Token "size-8" has 2 duplicates
+Token "spectrum-coral-40" has 4 duplicates
+Token "spectrum-coral-50" has 3 duplicates
+Token "spectrum-coral-95" has 3 duplicates
+Token "spectrum-cyan-50" has 2 duplicates
+Token "spectrum-cyan-60" has 4 duplicates
+Token "spectrum-cyan-95" has 2 duplicates
+Token "spectrum-gray-00" has 2 duplicates
+Token "spectrum-gray-05" has 2 duplicates
+Token "spectrum-gray-100" has 4 duplicates
+Token "spectrum-gray-20" has 5 duplicates
+Token "spectrum-gray-30" has 2 duplicates
+Token "spectrum-gray-50" has 3 duplicates
+Token "spectrum-gray-60" has 4 duplicates
+Token "spectrum-gray-65" has 4 duplicates
+Token "spectrum-gray-80" has 2 duplicates
+Token "spectrum-gray-90" has 3 duplicates
+Token "spectrum-gray-95" has 6 duplicates
+Token "spectrum-red-35" has 2 duplicates
+Token "spectrum-yellow-95" has 2 duplicates
+Token "success-success" has 2 duplicates
+Token "success-success-border" has 2 duplicates
+Token "success-success-foreground" has 2 duplicates
+Token "success-success-soft" has 2 duplicates
+Token "success-success-soft-foreground" has 2 duplicates
+Token "warning-warning" has 2 duplicates
+Token "warning-warning-border" has 2 duplicates
+Token "warning-warning-foreground" has 2 duplicates
+Token "warning-warning-soft" has 2 duplicates
+Token "warning-warning-soft-foreground" has 2 duplicates
+Token "panel-border" has 2 duplicates
+Token "white" has 5 duplicates
+✅ Generated src/wab/styles/_tokens.sass
+ [OK]
+🔨 Ejecutando: tools/gen-theo.ts...Token "basicContainerBackground" has 2 duplicates
+Token "basicContainerBackgroundDark" has 2 duplicates
+Token "basicTextPrimary" has 2 duplicates
+Token "brandBrand" has 2 duplicates
+Token "brandBrandBorder" has 2 duplicates
+Token "brandBrandForeground" has 2 duplicates
+Token "brandBrandSoft" has 2 duplicates
+Token "brandBrandSoftForeground" has 2 duplicates
+Token "destructiveDestructive" has 2 duplicates
+Token "destructiveDestructiveBorder" has 2 duplicates
+Token "destructiveDestructiveForeground" has 2 duplicates
+Token "destructiveDestructiveSoft" has 2 duplicates
+Token "destructiveDestructiveSoftForeground" has 2 duplicates
+Token "fontLg" has 2 duplicates
+Token "fontMd" has 2 duplicates
+Token "fontSm" has 2 duplicates
+Token "interactionDisabled" has 2 duplicates
+Token "interactionHovered" has 2 duplicates
+Token "interactionPressed" has 2 duplicates
+Token "lineHeightLg" has 2 duplicates
+Token "lineHeightMd" has 2 duplicates
+Token "lineHeightSm" has 2 duplicates
+Token "mutedMuted" has 2 duplicates
+Token "mutedMutedBorder" has 2 duplicates
+Token "mutedMutedForeground" has 2 duplicates
+Token "mutedMutedSoft" has 2 duplicates
+Token "mutedMutedSoftForeground" has 2 duplicates
+Token "neutralNeutral" has 2 duplicates
+Token "neutralNeutralBorder" has 2 duplicates
+Token "neutralNeutralForeground" has 2 duplicates
+Token "neutralNeutralSoft" has 2 duplicates
+Token "neutralNeutralSoftForeground" has 2 duplicates
+Token "sansSerif" has 2 duplicates
+Token "size10" has 2 duplicates
+Token "size12" has 2 duplicates
+Token "size16" has 2 duplicates
+Token "size2" has 2 duplicates
+Token "size4" has 2 duplicates
+Token "size6" has 2 duplicates
+Token "size8" has 2 duplicates
+Token "spectrumCoral40" has 4 duplicates
+Token "spectrumCoral50" has 3 duplicates
+Token "spectrumCoral95" has 3 duplicates
+Token "spectrumCyan50" has 2 duplicates
+Token "spectrumCyan60" has 4 duplicates
+Token "spectrumCyan95" has 2 duplicates
+Token "spectrumGray00" has 2 duplicates
+Token "spectrumGray05" has 2 duplicates
+Token "spectrumGray100" has 4 duplicates
+Token "spectrumGray20" has 5 duplicates
+Token "spectrumGray30" has 2 duplicates
+Token "spectrumGray50" has 3 duplicates
+Token "spectrumGray60" has 4 duplicates
+Token "spectrumGray65" has 4 duplicates
+Token "spectrumGray80" has 2 duplicates
+Token "spectrumGray90" has 3 duplicates
+Token "spectrumGray95" has 6 duplicates
+Token "spectrumRed35" has 2 duplicates
+Token "spectrumYellow95" has 2 duplicates
+Token "successSuccess" has 2 duplicates
+Token "successSuccessBorder" has 2 duplicates
+Token "successSuccessForeground" has 2 duplicates
+Token "successSuccessSoft" has 2 duplicates
+Token "successSuccessSoftForeground" has 2 duplicates
+Token "warningWarning" has 2 duplicates
+Token "warningWarningBorder" has 2 duplicates
+Token "warningWarningForeground" has 2 duplicates
+Token "warningWarningSoft" has 2 duplicates
+Token "warningWarningSoftForeground" has 2 duplicates
+Token "panelBorder" has 2 duplicates
+Token "white" has 5 duplicates
+✅ Generated src/wab/styles/_tokens.ts
+ [OK]
+🔍 Verificando carpeta 'gen'...
+
+✅ Generación finalizada. Intenta arrancar los servidores de nuevo.
+Name
+----
+.gitkeep
+css-peg-parser.spec.ts

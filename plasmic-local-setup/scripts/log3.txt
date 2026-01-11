@@ -1,0 +1,23 @@
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\start_plasmic.ps1                                                      ?? Iniciando Plasmic Studio (Local Mode)...
+?? Verificando dependencias...
+?? Arrancando Servidores...
+   - Backend: http://localhost:3004
+   - Studio:  http://localhost:3003
+   (Presiona Ctrl+C para detener ambos)
+   [Backend PID: 3320] Iniciado...
+? Esperando 10 segundos para que el backend caliente...
+yarn run v1.22.22
+$ bash tools/backend-server.bash
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+   [Frontend PID: 7328] Iniciado...
+yarn run v1.22.22
+$ bash tools/dev-server.bash dev
+"bash" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+?? Deteniendo servicios...

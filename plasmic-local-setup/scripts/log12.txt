@@ -1,0 +1,19 @@
+PS C:\tmp-plasmik\platform\wab> $env:NODE_OPTIONS="--max-old-space-size=8192" 
+PS C:\tmp-plasmik\platform\wab> node -r esbuild-register -r dotenv/config tools/gen-models.ts                           C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-generator.ts:19
+export const parse = (x: /*TWZ*/ string) => modelPegParser.parse(clean(x));
+                                                           ^
+
+
+TypeError: modelPegParser.parse is not a function
+    at parse (C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-generator.ts:19:60)
+    at writeTypescriptClasses (C:\tmp-plasmik\platform\wab\src\wab\shared\model\model-generator.ts:143:29)
+    at Object.<anonymous> (C:\tmp-plasmik\platform\wab\tools\gen-models.ts:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:2258:26)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.newLoader [as .ts] (C:\tmp-plasmik\platform\wab\node_modules\esbuild-register\dist\node.js:2262:9)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+
+Node.js v22.16.0

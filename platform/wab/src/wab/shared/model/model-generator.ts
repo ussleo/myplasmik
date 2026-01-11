@@ -13,7 +13,8 @@ import assignIn from "lodash/assignIn";
 import difference from "lodash/difference";
 import flattenDeep from "lodash/flattenDeep";
 
-const modelPegParser = require("@/wab/gen/modelPegParser");
+const modelPegParserRaw = require("@/wab/gen/modelPegParser");
+const modelPegParser = modelPegParserRaw.parse ? modelPegParserRaw : { parse: modelPegParserRaw };
 
 export const parse = (x: /*TWZ*/ string) => modelPegParser.parse(clean(x));
 

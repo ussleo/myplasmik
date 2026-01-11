@@ -1,0 +1,47 @@
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\start_plasmic.ps1
+?? Iniciando Plasmic Studio (Local Mode)...
+?? Verificando dependencias...
+?? Arrancando Servidores...
+   - Backend: http://localhost:3004
+   - Studio:  http://localhost:3003
+   (Presiona Ctrl+C para detener ambos)
+Start-Process : Este comando no se puede ejecutar debido al error: %1 no es una aplicación Win32 válida.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 40 Carácter: 19
++ ... ndProcess = Start-Process yarn -ArgumentList "dev:backend" -PassThru  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+   [Backend PID: ] Iniciado...
+Start-Process : Este comando no se puede ejecutar debido al error: %1 no es una aplicación Win32 válida.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 46 Carácter: 20
++ ... ndProcess = Start-Process yarn -ArgumentList "dev:frontend" -PassThru ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+   [Frontend PID: ] Iniciado...
+
+?? Deteniendo servicios...
+Stop-Process : No se puede enlazar el argumento al parámetro 'Id' porque es nulo.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 55 Carácter: 22
++     Stop-Process -Id $BackendProcess.Id -ErrorAction SilentlyContinue
++                      ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcess
+   Command
+
+Stop-Process : No se puede enlazar el argumento al parámetro 'Id' porque es nulo.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 56 Carácter: 22
++     Stop-Process -Id $FrontendProcess.Id -ErrorAction SilentlyContinu ...
++                      ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Stop-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcess
+   Command
+
+No se puede llamar a un método en una expresión con valor NULL.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 51 Carácter: 5
++     $BackendProcess.WaitForExit()
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull

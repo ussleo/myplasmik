@@ -1,0 +1,10 @@
+PS C:\tmp-plasmik\plasmic-local-setup\scripts> .\start_plasmic.ps1                                                      En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 136 Carácter: 41
++     Write-Host '?? Iniciando Frontend...' -ForegroundColor Magenta;
++                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Falta la cadena en el terminador: '.
+En C:\tmp-plasmik\plasmic-local-setup\scripts\start_plasmic.ps1: 55 Carácter: 31
++ function Start-ProcessWithEnv {
++                               ~
+Falta la llave de cierre "}" en el bloque de instrucciones o la definición de tipo.
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
