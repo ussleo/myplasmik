@@ -3,79 +3,65 @@
 ## Project Overview
 **myPlasmik** is a specialized fork of the Plasmic Studio (`plasmicapp/plasmic`), optimized to run **100% locally on Windows** without Docker, cloud dependencies, or internet access. It is designed for a single-developer workflow, replacing cloud services with local equivalents or bypassing them entirely.
 
+**Current Status (Jan 11, 2026):** Production Ready (Local V1.0).
+
 ## Architecture
 The project is a monorepo managed by Yarn Workspaces and Lerna.
 
 *   **Frontend (`platform/wab/src/wab/client`)**: The visual editor UI.
     *   **Port**: `3003`
     *   **Tech**: React, MobX, Ant Design.
-    *   **Build Tool**: `rsbuild` (Webpack successor).
+    *   **Branding**: Updated to "myPlasmik by Gemini".
 *   **Backend (`platform/wab/src/wab/server`)**: The API and persistence layer.
     *   **Port**: `3004`
     *   **Tech**: Node.js, Express, TypeORM, PostgreSQL.
-    *   **Role**: Handles authentication, project storage, and local code generation.
+    *   **Persistence**: Automatically saves projects to `projects/` JSON files for Git tracking.
+*   **Host Server (`plasmic-local-setup/scripts/serve_host.js`)**:
+    *   **Port**: `3005`
+    *   **Role**: Serves the `host.html` required for the visual canvas, replacing the cloud dependency (`plasmic.app`).
 *   **Database**: PostgreSQL.
-    *   **User**: `wab`
-    *   **DB**: `wab`
-    *   **Port**: `5432`
-*   **Codegen**: The mechanism that syncs visual designs to code.
-    *   **Original**: `codegen.plasmic.app`
-    *   **Modified**: `localhost:3004` (Patched in `packages/loader-fetcher`).
+    *   **User**: `wab` / **DB**: `wab` / **Port**: `5432`
 
 ## 🛠️ Local Windows Development Workflow
 
-This project includes a custom suite of PowerShell scripts in `plasmic-local-setup/scripts/` to handle the complex build process on Windows natively, bypassing the original Bash scripts.
+### 1. Documentation
+Comprehensive documentation is located in `docs/local-setup/`, including:
+*   `GETTING_STARTED.md`: Quick start guide.
+*   `ARCHITECTURE.md`: Deep technical dive.
+*   `USAGE_GUIDE.md`: Daily workflow instructions.
 
-### 1. Prerequisites
-*   Node.js (v18+)
-*   PostgreSQL (Running locally)
-*   Yarn (`npm install -g yarn`)
-*   PowerShell (Run as Administrator for setup)
-
-### 2. Setup Scripts (Run in Order)
+### 2. Setup Scripts (PowerShell)
 Located in `plasmic-local-setup/scripts/`:
+1.  **`install_dependencies.ps1`**: `yarn install`.
+2.  **`setup_db.ps1`**: DB initialization.
+3.  **`generate_artifacts.ps1`**: Compiles parsers (`pegjs`/`pegcoffee`) and generates models.
+4.  **`start_plasmic.ps1`**: Launches Backend, Frontend, and Host Server interactively.
 
-1.  **`install_dependencies.ps1`**: Runs `yarn install` in the critical `platform/wab` workspace.
-2.  **`setup_db.ps1`**: Creates the `wab` user and database in your local PostgreSQL instance.
-3.  **`generate_artifacts.ps1`**: **CRITICAL**. Compiles PEG.js parsers (CoffeeScript/JS), generates database models (`gen-models.ts`), and builds styling tokens. *Note: Includes a custom manual compilation step for `.pegcoffee` files.*
-4.  **`fix_styles.ps1`**: Generates missing SASS variables (e.g., `$selectionControlsColor`) and empty placeholder files (`.txt`) required by the frontend build.
-
-### 3. Running the Application
-
-#### Option A: Interactive Mode (Debug)
-```powershell
-.\plasmic-local-setup\scripts\start_plasmic.ps1
-```
-Launches two separate PowerShell windows (Backend & Frontend) to view logs in real-time. Use this for development.
-
-#### Option B: Silent Mode (PM2)
+### 3. Running the Application (PM2 - Recommended)
+The project uses PM2 to manage all three services (Frontend, Backend, Host).
 ```bash
 pm2 start ecosystem.config.js
 pm2 logs
 ```
-Runs the stack in the background using Process Manager 2.
 
 ## 🔑 Authentication
 *   **Login URL**: `http://localhost:3003`
-*   **Credentials**:
-    *   Email: `user@example.com`
-    *   Password: `!53kr3tz!`
-*   **Auth Method**: `passport-local` (Email/Password). Google Auth is present but disabled/unconfigured for local use.
+*   **Credentials**: `user@example.com` / `!53kr3tz!`
 
 ## 🧪 Key Modifications & Patches
 
 ### Core Logic
-*   **Codegen Host**: `packages/loader-fetcher/src/api.ts` patched to default to `process.env.PLASMIC_HOST` or `localhost:3004`.
-*   **Parser Compilation**: Custom logic in `generate_artifacts.ps1` to compile `.pegcoffee` grammars without the original broken build chain.
+*   **Codegen Host**: `packages/loader-fetcher/src/api.ts` patched to point to `localhost:3004`.
+*   **Host Server**: Local Node.js server (port 3005) replaces cloud host.
+*   **CORS**: `studio-frame.tsx` patched to allow `localhost` origins.
 
 ### Branding
-*   **UI**: `platform/wab/src/wab/client/components/pages/IntakeFlowForm.tsx` modified to display "myPlasmik by Gemini" on the login screen.
+*   **UI**: "myPlasmik by Gemini" in Login screen and Top Bar.
 
 ### Configuration
-*   **Env Vars**: `platform/wab/.env` configured for local Postgres (`postgres://wab:SEKRET@localhost:5432/wab`).
-*   **Dev Flags**: `PLASMIC_IMG_OPTIMIZATION=false` and `PLASMIC_MULTIPLAYER=false` to remove cloud dependencies.
+*   **Env Vars**: `platform/wab/.env` configured for local Postgres.
+*   **Dev Flags**: `PLASMIC_IMG_OPTIMIZATION=false` and `PLASMIC_MULTIPLAYER=false`.
 
-## ⚠️ Known Issues / Troubleshooting
-*   **SASS Errors**: If build fails with `Undefined variable`, run `fix_styles.ps1` again.
-*   **Missing Modules**: If `Cannot find module '@/wab/gen/...'`, run `generate_artifacts.ps1`.
-*   **Bash Errors**: Never run `yarn start` or `yarn backend` directly on Windows; they call `bash` scripts. Always use the PowerShell wrappers or `pm2`.
+## ⚠️ Known Issues
+*   **SASS Errors**: Run `fix_styles.ps1` if styles break.
+*   **Bash Scripts**: Avoid `yarn start`; use PowerShell wrappers or PM2.
