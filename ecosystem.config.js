@@ -43,6 +43,15 @@ module.exports = {
         PUBLIC_URL: "http://localhost:3003",
         NODE_OPTIONS: "--max-old-space-size=16384"
       }
+    },
+    {
+      name: "plasmic-host-server",
+      cwd: "./plasmic-local-setup/scripts",
+      script: "serve_host.js",
+      interpreter: "node",
+      env: {
+        PORT: "3005"
+      }
     }
   ]
 }

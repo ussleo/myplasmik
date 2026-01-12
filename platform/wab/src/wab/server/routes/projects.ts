@@ -3,6 +3,8 @@ import * as semver from "@/wab/commons/semver";
 import { toOpaque } from "@/wab/commons/types";
 import { ProjectVersionMeta, VersionResolution } from "@/wab/commons/versions";
 import { createBranchFromBase } from "@/wab/server/branch";
+import * as fs from "fs";
+import * as path from "path";
 import { reevaluateDataSourceExprOpIds } from "@/wab/server/data-sources/data-source-utils";
 import {
   getLastBundleVersion,
@@ -1387,6 +1389,18 @@ export async function saveProjectRev(req: Request, res: Response) {
     // Prefer re using the bundle up to this point, so that it won't require running
     // multiple JSON.stringify()/JSON.parse() on large bundles
     const data = JSON.stringify(mergedBundle);
+
+    // Save to local filesystem for Git tracking
+    try {
+      const projectsDir = path.join(process.cwd(), "../../projects");
+      if (!fs.existsSync(projectsDir)) {
+        fs.mkdirSync(projectsDir, { recursive: true });
+      }
+      const fileName = `${projectId}${branchId ? `-${branchId}` : ""}.json`;
+      fs.writeFileSync(path.join(projectsDir, fileName), JSON.stringify(mergedBundle, null, 2));
+    } catch (e) {
+      logger().error(`Failed to save project ${projectId} to filesystem: ${e}`);
+    }
 
     req.promLabels.projectId = projectId;
     req.analytics.track("Save project", {

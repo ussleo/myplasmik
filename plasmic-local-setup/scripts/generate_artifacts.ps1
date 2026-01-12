@@ -21,11 +21,11 @@ function Run-TS($ScriptPath, $ArgsList = @()) {
     $NodeArgs = @("-r", "esbuild-register", "-r", "dotenv/config", $ScriptPath) + $ArgsList
     
     try {
-        $process = Start-Process node -ArgumentList $NodeArgs -PassThru -NoNewWindow -Wait
-        if ($process.ExitCode -eq 0) {
+        node @NodeArgs
+        if ($LASTEXITCODE -eq 0) {
             Write-Host " [OK]" -ForegroundColor Green
         } else {
-            Write-Host " [ERROR ($($process.ExitCode))]" -ForegroundColor Red
+            Write-Host " [ERROR ($LASTEXITCODE)]" -ForegroundColor Red
         }
     } catch {
         Write-Host " [FALLÓ]" -ForegroundColor Red
@@ -51,9 +51,9 @@ function Compile-Peg($Input, $OutputName) {
     }
 
     try {
-        # Ejecutamos pegjs
-        $process = Start-Process $PegJsBin -ArgumentList "$Plugin --format commonjs --output $OutPath $Input" -PassThru -NoNewWindow -Wait
-        if ($process.ExitCode -eq 0) {
+        # Ejecutamos pegjs directamente
+        & $PegJsBin --plugin pegjs-coffee-plugin --format commonjs --output $OutPath $Input
+        if ($LASTEXITCODE -eq 0) {
             Write-Host " [OK]" -ForegroundColor Green
         } else {
             Write-Host " [ERROR]" -ForegroundColor Red
@@ -70,10 +70,10 @@ if (-not (Test-Path "src/wab/gen")) {
 
 # 1. COMPILAR PARSERS (Paso Crítico Faltante)
 # Estos archivos son requeridos por los generadores siguientes
-Compile-Peg "src/wab/modelPegParser.pegcoffee" "modelPegParser"
-Compile-Peg "src/wab/cssPegParser.pegcoffee" "cssPegParser"
-Compile-Peg "src/wab/funcTplParser.pegcoffee" "funcTplParser"
-Compile-Peg "src/wab/GridStyleParser.pegjs" "GridStyleParser" # Este es pegjs puro, quizás sin plugin
+Compile-Peg "modelPegParser.pegcoffee" "modelPegParser"
+Compile-Peg "cssPegParser.pegcoffee" "cssPegParser"
+Compile-Peg "funcTplParser.pegcoffee" "funcTplParser"
+Compile-Peg "GridStyleParser.pegjs" "GridStyleParser" # Este es pegjs puro, quizás sin plugin
 
 # 2. Generar Modelos (Ahora debería funcionar)
 Run-TS "tools/gen-models.ts"

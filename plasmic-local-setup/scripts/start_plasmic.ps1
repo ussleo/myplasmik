@@ -9,6 +9,10 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 Write-Host "🔥 Lanzando ventana del Backend..." -ForegroundColor Yellow
 Start-Process powershell -ArgumentList "-NoExit", "-File", "$ScriptDir\run_backend.ps1"
 
+# Lanzar Host
+Write-Host "🏠 Lanzando ventana del Host..." -ForegroundColor Green
+Start-Process powershell -ArgumentList "-NoExit", "-File", "$ScriptDir\run_host.ps1"
+
 Write-Host "⏳ Esperando 10 segundos..."
 Start-Sleep -Seconds 10
 

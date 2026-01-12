@@ -36,8 +36,19 @@ class NormalLayoutComponent extends React.Component<
             <div
               className={"normal-layout-content normal-layout-content--top-bar"}
             >
-              <widgets.PlainLink href={"/"} className={"home-logo"}>
-                <MarkFullColorIcon className="normal-layout__mark" />
+              <widgets.PlainLink href={"/"} className={"home-logo"} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <MarkFullColorIcon className="normal-layout__mark" style={{ width: 32, height: 32 }} />
+                <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#333' }}>myPlasmik</span>
+                <span style={{ 
+                  fontSize: '10px', 
+                  background: '#52c41a', 
+                  color: 'white', 
+                  padding: '2px 6px', 
+                  borderRadius: '10px',
+                  marginLeft: '5px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px'
+                }}>Local</span>
               </widgets.PlainLink>
 
               {topBar}

@@ -280,11 +280,11 @@ const DEFAULT_DEVFLAGS = {
   },
   content: true,
   contentEditorMode: false,
-  codegenHost: process.env.CODEGEN_HOST || "https://codegen.plasmic.app",
+  codegenHost: process.env.CODEGEN_HOST || "http://localhost:3004",
   codegenOriginHost:
     process.env.CODEGEN_ORIGIN_HOST ||
     process.env.CODEGEN_HOST ||
-    "http://codegen-origin.plasmic.app",
+    "http://localhost:3004",
   adminTeamDomain: production ? "plasmic.app" : "admin.example.com",
   defaultHostUrl:
     process.env.REACT_APP_DEFAULT_HOST_URL ||
