@@ -41,14 +41,14 @@ class NormalLayoutComponent extends React.Component<
                 <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#333' }}>myPlasmik</span>
                 <span style={{ 
                   fontSize: '10px', 
-                  background: '#52c41a', 
+                  background: 'linear-gradient(to right, #3b82f6, #8b5cf6)', 
                   color: 'white', 
                   padding: '2px 6px', 
                   borderRadius: '10px',
                   marginLeft: '5px',
-                  textTransform: 'uppercase',
+                  fontWeight: '600',
                   letterSpacing: '0.5px'
-                }}>Local</span>
+                }}>by Gemini</span>
               </widgets.PlainLink>
 
               {topBar}
