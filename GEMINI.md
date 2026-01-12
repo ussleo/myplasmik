@@ -3,7 +3,7 @@
 ## Project Overview
 **myPlasmik** is a specialized fork of the Plasmic Studio (`plasmicapp/plasmic`), optimized to run **100% locally on Windows** without Docker, cloud dependencies, or internet access. It is designed for a single-developer workflow, replacing cloud services with local equivalents or bypassing them entirely.
 
-**Current Status (Jan 11, 2026):** Production Ready (Local V1.0).
+**Current Status (Jan 12, 2026):** Production Ready & Stabilized (Local V1.1).
 
 ## Architecture
 The project is a monorepo managed by Yarn Workspaces and Lerna.
@@ -29,13 +29,15 @@ Comprehensive documentation is located in `docs/local-setup/`, including:
 *   `GETTING_STARTED.md`: Quick start guide.
 *   `ARCHITECTURE.md`: Deep technical dive.
 *   `USAGE_GUIDE.md`: Daily workflow instructions.
+*   `TROUBLESHOOTING.md`: Critical fixes for build and runtime issues.
 
 ### 2. Setup Scripts (PowerShell)
 Located in `plasmic-local-setup/scripts/`:
 1.  **`install_dependencies.ps1`**: `yarn install`.
 2.  **`setup_db.ps1`**: DB initialization.
 3.  **`generate_artifacts.ps1`**: Compiles parsers (`pegjs`/`pegcoffee`) and generates models.
-4.  **`start_plasmic.ps1`**: Launches Backend, Frontend, and Host Server interactively.
+4.  **`fix_styles.ps1`**: Patches missing SASS variables and creates dummy files.
+5.  **`start_plasmic.ps1`**: Launches Backend, Frontend, and Host Server interactively.
 
 ### 3. Running the Application (PM2 - Recommended)
 The project uses PM2 to manage all three services (Frontend, Backend, Host).
@@ -55,6 +57,10 @@ pm2 logs
 *   **Host Server**: Local Node.js server (port 3005) replaces cloud host.
 *   **CORS**: `studio-frame.tsx` patched to allow `localhost` origins.
 
+### Build System Fixes (Jan 12, 2026)
+*   **Manual Compilation**: Critical sub-packages (`react-web-bundle`, `live-frame`, `loader-html-hydrate`) required manual `rollup` builds due to `rsbuild` failures.
+*   **CSS Generation**: `yarn build-css` in `platform/wab` is essential for the editor UI.
+
 ### Branding
 *   **UI**: "myPlasmik by Gemini" in Login screen and Top Bar.
 
@@ -62,6 +68,8 @@ pm2 logs
 *   **Env Vars**: `platform/wab/.env` configured for local Postgres.
 *   **Dev Flags**: `PLASMIC_IMG_OPTIMIZATION=false` and `PLASMIC_MULTIPLAYER=false`.
 
-## ⚠️ Known Issues
-*   **SASS Errors**: Run `fix_styles.ps1` if styles break.
+## ⚠️ Known Issues & Fixes
+*   **White Screen**: Caused by missing build artifacts. See `TROUBLESHOOTING.md`.
+*   **EADDRINUSE**: Ports 3003/3004 may hang. Use `pm2 delete all` and `taskkill` (or `netstat` to find PIDs).
+*   **SASS Errors**: Run `fix_styles.ps1`.
 *   **Bash Scripts**: Avoid `yarn start`; use PowerShell wrappers or PM2.

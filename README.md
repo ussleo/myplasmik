@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/local-setup/INDEX.md"><img alt="Status" src="https://img.shields.io/badge/status-production--ready-green" /></a>
+  <a href="docs/local-setup/INDEX.md"><img alt="Status" src="https://img.shields.io/badge/status-stable--v1.1-green" /></a>
   <a href="LICENSE.md"><img alt="License" src="https://img.shields.io/github/license/plasmicapp/plasmic" /></a>
   <a href="docs/local-setup/USAGE_GUIDE.md"><img alt="Docs" src="https://img.shields.io/badge/docs-local--setup-blue" /></a>
 </p>
@@ -92,10 +92,10 @@ This project comes with automated setup scripts for Windows (PowerShell).
 Detailed documentation for this local fork can be found in `docs/local-setup/`:
 
 - **[🏠 Start Here](docs/local-setup/GETTING_STARTED.md)**
+- **[🔧 Troubleshooting](docs/local-setup/TROUBLESHOOTING.md)** - **READ THIS if you see a White Screen.**
 - **[🏗 Architecture](docs/local-setup/ARCHITECTURE.md)** - How the local stack works.
 - **[📋 Executive Summary](docs/local-setup/EXECUTIVE_SUMMARY.md)** - High-level overview.
 - **[❓ FAQ](docs/local-setup/FAQ.md)** - Common questions and answers.
-- **[📊 Analysis Report](docs/local-setup/ANALYSIS_REPORT.md)** - Deep dive into the "Emergent" analysis.
 
 ## 📁 Repository Structure
 
