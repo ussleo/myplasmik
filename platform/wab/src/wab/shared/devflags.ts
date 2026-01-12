@@ -288,7 +288,7 @@ const DEFAULT_DEVFLAGS = {
   adminTeamDomain: production ? "plasmic.app" : "admin.example.com",
   defaultHostUrl:
     process.env.REACT_APP_DEFAULT_HOST_URL ||
-    "https://host.plasmicdev.com/static/host.html",
+    "http://localhost:3005/static/host.html",
   dynamicPages: true,
   enablePlasmicHosting: true,
   // Used to invalidate etag cacheing mechanism altogether

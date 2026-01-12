@@ -60,6 +60,12 @@ const whitelistedHosts = [
   // Remove when this ticket is done:
   // https://app.shortcut.com/plasmic/story/36383/allow-setting-trusted-host-for-whole-organization
   "https://website-git-benjaminflores-brand-2274-homepage-a-3a7667-scaleai.vercel.app",
+  "http://localhost:3005",
+  "http://localhost:3004",
+  "http://localhost:3003",
+  "http://127.0.0.1:3005",
+  "http://127.0.0.1:3004",
+  "http://127.0.0.1:3003",
 ];
 
 export function StudioFrame({
